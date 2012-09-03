@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C936E093-D491-49CC-B4E4-EC67465FB4D6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>com.g1.arcgis</RootNamespace>
+    <AssemblyName>com.g1.arcgis</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>g1_key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>com.g1.arcgis.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>com.g1.arcgis.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>com.g1.arcgis.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>com.g1.arcgis.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.ADF, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Carto, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Controls, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataManagementTools, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesGDB, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Display, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geodatabase, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geometry, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geoprocessor, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.System, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="algorithm\ICallerHskView.cs" />
+    <Compile Include="algorithm\IFrmMethodBuilderView.cs" />
+    <Compile Include="algorithm\IFrmParamsEditorView.cs" />
+    <Compile Include="algorithm\IParamsEditorView.cs" />
+    <Compile Include="attribute\IAttributeView.cs" />
+    <Compile Include="calculation\Algorithm.cs" />
+    <Compile Include="calculation\Algorithms.cs" />
+    <Compile Include="calculation\AlgorithmVisitor.cs" />
+    <Compile Include="calculation\BaseAlgorithm.cs" />
+    <Compile Include="calculation\CalculatingEventHandler.cs" />
+    <Compile Include="calculation\CalculationEventArg.cs" />
+    <Compile Include="calculation\CalculationFinishedEventHandler.cs" />
+    <Compile Include="calculation\EnumTypeOfLoopCalculation.cs" />
+    <Compile Include="calculation\IAlgorithm.cs" />
+    <Compile Include="calculation\IAlgorithmController.cs" />
+    <Compile Include="calculation\IAlgorithms.cs" />
+    <Compile Include="calculation\IAlgorithmView.cs" />
+    <Compile Include="algorithm\ICalcMethodBuilderView.cs" />
+    <Compile Include="calculation\ICalculation.cs" />
+    <Compile Include="calculation\ICalculationController.cs" />
+    <Compile Include="calculation\ICalculationMonitor.cs" />
+    <Compile Include="calculation\ICalculationView.cs" />
+    <Compile Include="calculation\ICalculator.cs" />
+    <Compile Include="calculation\IConfigController.cs" />
+    <Compile Include="calculation\IConfigReader.cs" />
+    <Compile Include="calculation\IConfigView.cs" />
+    <Compile Include="calculation\ICurrentConfig.cs" />
+    <Compile Include="calculation\IEditPositionParamsView.cs" />
+    <Compile Include="calculation\IExecutor.cs" />
+    <Compile Include="calculation\IGeneralConfigView.cs" />
+    <Compile Include="calculation\IInputParams.cs" />
+    <Compile Include="calculation\IOpenConfigView.cs" />
+    <Compile Include="calculation\IParams.cs" />
+    <Compile Include="calculation\ISaveConfigView.cs" />
+    <Compile Include="calculation\ISpatialAlgrorithm.cs" />
+    <Compile Include="calculation\ISpatialBag.cs" />
+    <Compile Include="calculation\IVisitor.cs" />
+    <Compile Include="calculation\IVisitorBag.cs" />
+    <Compile Include="calculation\SpatialAlgorithm.cs" />
+    <Compile Include="calculation\VisitorBag.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="ChangedEventHandler.cs" />
+    <Compile Include="connection\IConnectionInfo.cs" />
+    <Compile Include="connection\IConnectionInfoController.cs" />
+    <Compile Include="connection\IConnectionView.cs" />
+    <Compile Include="connection\ICurrentConnectionStatus.cs" />
+    <Compile Include="connection\IMainSwitch.cs" />
+    <Compile Include="connection\ISdeConnectionInfo.cs" />
+    <Compile Include="connection\ISdeUserInfo.cs" />
+    <Compile Include="connection\ISqlConnectionInfo.cs" />
+    <Compile Include="connection\ISqlUserInfo.cs" />
+    <Compile Include="connection\IUserInfo.cs" />
+    <Compile Include="connection\IUserInfoController.cs" />
+    <Compile Include="control\IGControl.cs" />
+    <Compile Include="database\EnumG1ArcGisTnRecType.cs" />
+    <Compile Include="database\EnumTypeOfEdit.cs" />
+    <Compile Include="database\GAppend.cs" />
+    <Compile Include="database\GConnectionString.cs" />
+    <Compile Include="database\IAppend.cs" />
+    <Compile Include="database\ICopyFeatureClass.cs" />
+    <Compile Include="database\ICopyFeatures.cs" />
+    <Compile Include="database\IDataManager.cs" />
+    <Compile Include="database\IFeatureClassManager.cs" />
+    <Compile Include="database\ILoader.cs" />
+    <Compile Include="database\ILoaderController.cs" />
+    <Compile Include="database\IReceiverView.cs" />
+    <Compile Include="database\ISDETableEditor.cs" />
+    <Compile Include="database\ISDETableQuery.cs" />
+    <Compile Include="database\ISQLTable.cs" />
+    <Compile Include="edit\EditTableEvent.cs" />
+    <Compile Include="edit\EditTableEventHandler.cs" />
+    <Compile Include="edit\G1TypeOfContextMenu.cs" />
+    <Compile Include="edit\IEditTableView.cs" />
+    <Compile Include="edit\IEditView.cs" />
+    <Compile Include="FinishedEventHandler.cs" />
+    <Compile Include="FrmSaveEditQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSaveEditQuestion.Designer.cs">
+      <DependentUpon>FrmSaveEditQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="geoprocessorTool\GeoprocessorAbstract.cs" />
+    <Compile Include="geoprocessorTool\GeoprocessorConstant.cs" />
+    <Compile Include="landprice\IFrmLandPriceView.cs" />
+    <Compile Include="landprice\ILandprice.cs" />
+    <Compile Include="landprice\ILandpriceController.cs" />
+    <Compile Include="landprice\ILandpriceDetail.cs" />
+    <Compile Include="landprice\ILandpriceDetailController.cs" />
+    <Compile Include="landprice\ILandpriceDetailView.cs" />
+    <Compile Include="landprice\ILandpriceView.cs" />
+    <Compile Include="landprice\IParamSwitch.cs" />
+    <Compile Include="landprice\IXacNhan.cs" />
+    <Compile Include="landprice\LandpriceViewPair.cs" />
+    <Compile Include="landprice\ThuaGiaDatInfo.cs" />
+    <Compile Include="LoaderEventArg.cs" />
+    <Compile Include="LoaderFinishedEventHandler.cs" />
+    <Compile Include="map\IGMap.cs" />
+    <Compile Include="map\ILayersView.cs" />
+    <Compile Include="map\IMapContextMenu.cs" />
+    <Compile Include="map\IMapView.cs" />
+    <Compile Include="map\IMapViewController.cs" />
+    <Compile Include="map\ITocContextMenu.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="property\ILabelView.cs" />
+    <Compile Include="QueryEventArg.cs" />
+    <Compile Include="QueryFinishedEventHandler.cs" />
+    <Compile Include="QueryingEventHandler.cs" />
+    <Compile Include="query\EnumTypeOfResult.cs" />
+    <Compile Include="query\IAttributeQuery.cs" />
+    <Compile Include="query\IAttributeQueryController.cs" />
+    <Compile Include="query\IAttributeQueryView.cs" />
+    <Compile Include="query\ICopyData.cs" />
+    <Compile Include="query\ICopyDataController.cs" />
+    <Compile Include="query\ICopyDataView.cs" />
+    <Compile Include="query\IInfoForQuery.cs" />
+    <Compile Include="query\IInfoForQuerySql.cs" />
+    <Compile Include="query\IJoin.cs" />
+    <Compile Include="query\IJoinController.cs" />
+    <Compile Include="query\IJoinView.cs" />
+    <Compile Include="query\IQueryThua.cs" />
+    <Compile Include="query\IQueryThuaController.cs" />
+    <Compile Include="query\IQueryThuaView.cs" />
+    <Compile Include="query\ISelectByLocationView.cs" />
+    <Compile Include="query\ThuaDataBag.cs" />
+    <Compile Include="spatialAnalysis\IBuffer.cs" />
+    <Compile Include="spatialAnalysis\IClip.cs" />
+    <Compile Include="spatialAnalysis\IErase.cs" />
+    <Compile Include="spatialAnalysis\IMerge.cs" />
+    <Compile Include="thematic\IThematic.cs" />
+    <Compile Include="thematic\IThematicController.cs" />
+    <Compile Include="thematic\IThematicView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="g1_key.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\com.g1\com.g1.csproj">
+      <Project>{BF0179B1-5301-4309-9457-688CD00E7BE5}</Project>
+      <Name>com.g1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmSaveEditQuestion.resx">
+      <DependentUpon>FrmSaveEditQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lookup\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

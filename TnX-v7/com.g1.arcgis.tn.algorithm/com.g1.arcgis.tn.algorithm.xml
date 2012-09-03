@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>com.g1.arcgis.tn.algorithm</name>
+    </assembly>
+    <members>
+        <member name="F:com.g1.arcgis.tn.algorithm.GCalcMethodBuilderView.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:com.g1.arcgis.tn.algorithm.GCalcMethodBuilderView.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:com.g1.arcgis.tn.algorithm.GCalcMethodBuilderView.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:com.g1.arcgis.tn.algorithm.FrmCalcMethodBuilder.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:com.g1.arcgis.tn.algorithm.FrmCalcMethodBuilder.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:com.g1.arcgis.tn.algorithm.FrmCalcMethodBuilder.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:com.g1.arcgis.tn.algorithm.GParamsView.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:com.g1.arcgis.tn.algorithm.GParamsView.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:com.g1.arcgis.tn.algorithm.GParamsView.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

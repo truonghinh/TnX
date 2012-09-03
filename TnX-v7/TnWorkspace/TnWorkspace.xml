@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TnWorkspace</name>
+    </assembly>
+    <members>
+        <member name="M:TnWorkspace.WorkspaceManagement.CheckLayerExist(System.String[0:,0:],System.String)">
+            <summary>
+            kiem tra layer co ton tai ko, ko ho tro table
+            .Dang bi loi
+            </summary>
+            <param name="user_info"></param>
+            <param name="layer_name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TnWorkspace.WorkspaceManagement.CreateConnectionFile(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            tạo file connection *.sde
+            </summary>
+            <param name="server"></param>
+            <param name="instance"></param>
+            <param name="user"></param>
+            <param name="password"></param>
+            <param name="database"></param>
+            <param name="version"></param>
+            <param name="sdePathWithSlash">c:\\temp\\</param>
+            <param name="sdeFileName">Sample.sde</param>
+            <returns></returns>
+        </member>
+        <member name="M:TnWorkspace.WorkspaceManagement.CreateConnectionFile(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="server"></param>
+            <param name="instance"></param>
+            <param name="user"></param>
+            <param name="password"></param>
+            <param name="database"></param>
+            <param name="version"></param>
+            <param name="sdeFullPath">c:\\temp\\Sample.sde</param>
+            <returns></returns>
+        </member>
+        <member name="M:TnWorkspace.WorkspaceManagement.ArcSdeWorkspaceFromFile(System.String)">
+            <summary>
+            Kết nối với server bằng file *.sde
+            </summary>
+            <param name="connectionFile">C:\\myData\\Sample.sde</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="calculation">
+    <Position X="0.5" Y="0.5" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="calculator">
+    <Position X="1.422" Y="1.926" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="g1.tn.calculation.calculator.Calculator" Collapsed="true">
+    <Position X="3.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAESAAAAAAAIAgAAAAAAAAAAAAJBEIggAAAAA=</HashCode>
+      <FileName>calculation\calculator\Calculator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="g1.tn.calculation.CalculationEventArg">
+    <Position X="3.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>calculation\CalculationEventArg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="g1.tn.calculation.ICalculationView">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>calculation\ICalculationView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="g1.tn.calculation.ICalculationController" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAACQAAAAAAAQAAAAAAAAAAAAQIAAAAAAAAAA=</HashCode>
+      <FileName>calculation\ICalculationController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="g1.tn.calculation.ICalculationMonitor">
+    <Position X="5.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>calculation\ICalculationMonitor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="g1.tn.param.ICurrentConfig" Collapsed="true">
+    <Position X="4.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGE3QAILAUCAkCAAUgQAsACAEQAUAABBQgCUAkAAAA=</HashCode>
+      <FileName>param\ICurrentConfig.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="g1.tn.execution.IExecutor">
+    <Position X="20" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABCAgAAgAAAAAAAYAAAAAAAAAgAAAYAAAQBAAAAA=</HashCode>
+      <FileName>calculation\execution\IExecutor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="g1.tn.param.IInputParams" Collapsed="true">
+    <Position X="2.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAACAAAAAAQgAEBAAAgAAEAAABAAAACAQBAAAgIQA=</HashCode>
+      <FileName>param\IInputParams.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="g1.tn.calculation.IEditPositionParamsView">
+    <Position X="24" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAACAAAAAAAAAAEAAAAAAAgAACAAAA=</HashCode>
+      <FileName>calculation\IEditPositionParamsView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="g1.tn.param.IOpenConfigView">
+    <Position X="25.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAIAECAAAAAAAAAAAAAADAAAA=</HashCode>
+      <FileName>param\IOpenConfigView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="g1.tn.param.IConfigView">
+    <Position X="26.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAABAAgAGAAAAEAAAAAACAAAAAAAA=</HashCode>
+      <FileName>param\IConfigView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="g1.tn.param.ISaveConfigView">
+    <Position X="29" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAIAECAAAAAAAAAAAAAADAAAA=</HashCode>
+      <FileName>param\ISaveConfigView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="g1.tn.ICalcMethodBuilderView" Collapsed="true">
+    <Position X="8.75" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAIAAAAAAAAIEAAAAEEAAAAEACACAAAAIACAAAA=</HashCode>
+      <FileName>calculation\ICalcMethodBuilderView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="g1.tn.calculation.IFrmMethodBuilderView">
+    <Position X="22.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>calculation\IFrmMethodBuilderView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

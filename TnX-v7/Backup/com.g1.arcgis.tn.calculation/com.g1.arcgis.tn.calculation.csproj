@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0E9207A4-C8B4-4328-93A0-906EFF994EC4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>com.g1.arcgis.tn.calculation</RootNamespace>
+    <AssemblyName>com.g1.arcgis.tn.calculation</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>caclculation_key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>com.g1.arcgis.tn.calculation.xml</DocumentationFile>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>com.g1.arcgis.tn.calculation.xml</DocumentationFile>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>com.g1.arcgis.tn.calculation.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>com.g1.arcgis.tn.calculation.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AMS.Profile, Version=2.0.4476.953, Culture=neutral, PublicKeyToken=4bfe8489ca9e2b65, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ProfileDemo\bin\Debug\AMS.Profile.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.AnalysisTools, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Carto, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataManagementTools, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Display, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geodatabase, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geometry, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geoprocessor, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.System, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="NCalc, Version=1.3.8.0, Culture=neutral, PublicKeyToken=973cde3f1cafed03, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\NCalc.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TnControlLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ed76c9eccdc45726, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\TnControlLib\bin\Debug\TnControlLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="algorithm\AlgorithmController.cs" />
+    <Compile Include="algorithm\AlgorithmPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="algorithm\AlgorithmPage.Designer.cs">
+      <DependentUpon>AlgorithmPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="algorithm\AlgorithmTimDuong.cs" />
+    <Compile Include="algorithm\IAlgorithmTimDuong.cs" />
+    <Compile Include="CalculationController.cs" />
+    <Compile Include="calculator\CalcGiaHemChinh100_200.cs" />
+    <Compile Include="calculator\CalcGiaHemChinhDuoi100.cs" />
+    <Compile Include="calculator\CalcGiaHemChinhTren200.cs" />
+    <Compile Include="calculator\CalcGiaHemPhu100_200.cs" />
+    <Compile Include="calculator\CalcGiaHemPhuDuoi100.cs" />
+    <Compile Include="calculator\CalcGiaHemPhuTren200.cs" />
+    <Compile Include="calculator\CalcLandprice.cs" />
+    <Compile Include="calculator\CalcPosThuaHemPhuTuGiaHemChinh.cs" />
+    <Compile Include="calculator\CalcPosTHCS100KoTronThua.cs" />
+    <Compile Include="calculator\CalcPosTHCS100_200TronThua.cs" />
+    <Compile Include="calculator\CalcPosTHCS100TronThua.cs" />
+    <Compile Include="calculator\CalcPosThuaHemChinhSau200_.cs" />
+    <Compile Include="calculator\CalcPosThuaHemChinhSauHon200.cs" />
+    <Compile Include="calculator\CalcPosTHPS100TronThua.cs" />
+    <Compile Include="calculator\CalcPosThuaHemPhuSau100_.cs" />
+    <Compile Include="calculator\CalcPosThuaHemPhuSau100_200.cs" />
+    <Compile Include="calculator\CalcPosThuaHemPhuSau200_.cs" />
+    <Compile Include="calculator\CalcPosThuaHemPhuSauHon200.cs" />
+    <Compile Include="calculator\CalcPosThuaMatTienTronThua.cs" />
+    <Compile Include="calculator\CalcPosThuaMatTienHon50m.cs" />
+    <Compile Include="calculator\CalcPosThuaNnVt1TronThua.cs" />
+    <Compile Include="calculator\CalcPosThuaNnVt1Hon100m.cs" />
+    <Compile Include="calculator\CalcPosThuaNnVt2Th1TronThua.cs" />
+    <Compile Include="calculator\CalcPosThuaPnnNtKv1Vt1.cs" />
+    <Compile Include="calculator\CalcPosThuaSau50m.cs" />
+    <Compile Include="calculator\CalcPosThuaTuGiaHemPhu.cs" />
+    <Compile Include="calculator\CalcThuaRiengLe.cs" />
+    <Compile Include="calculator\CalcThuaTuGiaHem.cs" />
+    <Compile Include="calculator\CalcTool.cs" />
+    <Compile Include="calculator\Calculator.cs" />
+    <Compile Include="calculator\CalculatorContext.cs" />
+    <Compile Include="calculator\FilterLandprice.cs" />
+    <Compile Include="calculator\FindPositionAndCalc.cs" />
+    <Compile Include="evaluate\CalculationMethodBuilder.cs" />
+    <Compile Include="evaluate\DefaultExpressions.cs" />
+    <Compile Include="evaluate\Evaluation.cs" />
+    <Compile Include="evaluate\ExpressionFunctions.cs" />
+    <Compile Include="evaluate\ExpressionKeyWords.cs" />
+    <Compile Include="evaluate\ExpressionParameters.cs" />
+    <Compile Include="FrmFilterLandprice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFilterLandprice.Designer.cs">
+      <DependentUpon>FrmFilterLandprice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQuyDinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQuyDinh.Designer.cs">
+      <DependentUpon>FrmQuyDinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetPositionParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetPositionParam.Designer.cs">
+      <DependentUpon>FrmSetPositionParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSummarizeLandprice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSummarizeLandprice.Designer.cs">
+      <DependentUpon>FrmSummarizeLandprice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fulfil\Executor.cs" />
+    <Compile Include="GCalculatingView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCalculatingView.Designer.cs">
+      <DependentUpon>GCalculatingView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GCalculationHemView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCalculationHemView.Designer.cs">
+      <DependentUpon>GCalculationHemView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GCalculationView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCalculationView.Designer.cs">
+      <DependentUpon>GCalculationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDatabaseInteractive.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="XtraForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraForm1.Designer.cs">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="algorithm\AlgorithmPage.resx">
+      <DependentUpon>AlgorithmPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFilterLandprice.resx">
+      <DependentUpon>FrmFilterLandprice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQuyDinh.resx">
+      <DependentUpon>FrmQuyDinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetPositionParam.resx">
+      <DependentUpon>FrmSetPositionParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSummarizeLandprice.resx">
+      <DependentUpon>FrmSummarizeLandprice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCalculatingView.resx">
+      <DependentUpon>GCalculatingView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCalculationHemView.resx">
+      <DependentUpon>GCalculationHemView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCalculationView.resx">
+      <DependentUpon>GCalculationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraForm1.resx">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\119_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="caclculation_key.snk" />
+    <None Include="Resources\131_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\com.g1.arcgis.connection\com.g1.arcgis.connection.csproj">
+      <Project>{0598BE3D-F8E8-49DB-8569-0D9B6D2A93CE}</Project>
+      <Name>com.g1.arcgis.connection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.g1.arcgis.database\com.g1.arcgis.database.csproj">
+      <Project>{90A6F5E2-4F71-48E9-BDBE-80AFB9E10E67}</Project>
+      <Name>com.g1.arcgis.database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.g1.arcgis.spatialAnalysis\com.g1.arcgis.spatialAnalysis.csproj">
+      <Project>{7C677D33-B849-41AE-8950-38051934D2BA}</Project>
+      <Name>com.g1.arcgis.spatialAnalysis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.g1.arcgis.tn.config\com.g1.arcgis.tn.config.csproj">
+      <Project>{2D1027CE-A2D8-4348-840C-8FBE73011A3E}</Project>
+      <Name>com.g1.arcgis.tn.config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.g1.arcgis.tn.query\com.g1.arcgis.tn.query.csproj">
+      <Project>{E4C560F6-FDD9-42F9-8163-E5AA304B017B}</Project>
+      <Name>com.g1.arcgis.tn.query</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.g1.arcgis.util\com.g1.arcgis.util.csproj">
+      <Project>{69369F22-C8DA-4CF4-82AD-84E54F64CBB7}</Project>
+      <Name>com.g1.arcgis.util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.g1.arcgis\com.g1.arcgis.csproj">
+      <Project>{C936E093-D491-49CC-B4E4-EC67465FB4D6}</Project>
+      <Name>com.g1.arcgis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.g1\com.g1.csproj">
+      <Project>{BF0179B1-5301-4309-9457-688CD00E7BE5}</Project>
+      <Name>com.g1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\gov.tn.system\gov.tn.system.csproj">
+      <Project>{984E43BA-ACE3-4B04-8E47-6BB6560281CF}</Project>
+      <Name>gov.tn.system</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\gov.tn\gov.tn.csproj">
+      <Project>{550833E5-73AD-476E-BCF1-400AB207D171}</Project>
+      <Name>gov.tn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MultiColumnListBox\MultiColumnListBox\MultiColumnListBox.csproj">
+      <Project>{485EBDE3-7D89-466C-B03E-8542AF2DBEB8}</Project>
+      <Name>MultiColumnListBox</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

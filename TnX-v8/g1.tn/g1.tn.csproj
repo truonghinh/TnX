@@ -31,6 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ESRI.ArcGIS.Geodatabase, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,8 +44,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="calculation\CalculationEventArg.cs" />
+    <Compile Include="calculation\CalculationFinishedEventHandler.cs" />
+    <Compile Include="calculation\calculator\Calculator.cs" />
+    <Compile Include="ChangedEventHandler.cs" />
+    <Compile Include="calculation\ICalculationView.cs" />
+    <Compile Include="calculation\ICalculationController.cs" />
+    <Compile Include="FinishedEventHandler.cs" />
+    <Compile Include="calculation\ICalculationMonitor.cs" />
+    <Compile Include="calculation\IEditPositionParamsView.cs" />
+    <Compile Include="calculation\ICalcMethodBuilderView.cs" />
+    <Compile Include="calculation\IFrmMethodBuilderView.cs" />
+    <Compile Include="param\ISaveConfigView.cs" />
+    <Compile Include="param\IConfigView.cs" />
+    <Compile Include="param\IOpenConfigView.cs" />
+    <Compile Include="param\ICurrentConfig.cs" />
+    <Compile Include="calculation\execution\IExecutor.cs" />
+    <Compile Include="param\IInputParams.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="calculation\evaluation\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,1027 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Danhmuc">
+    <Position X="3.961" Y="1.337" Height="0.427" Width="0.784" />
+  </Comment>
+  <Comment CommentText="Database">
+    <Position X="3.593" Y="2.999" Height="0.427" Width="0.784" />
+  </Comment>
+  <Comment CommentText="Quydinh">
+    <Position X="18.392" Y="1.393" Height="0.427" Width="0.784" />
+  </Comment>
+  <Comment CommentText="TnBaseFeatureClass">
+    <Position X="17.885" Y="2.837" Height="0.427" Width="1.398" />
+  </Comment>
+  <Comment CommentText="TnCalculation.TnCalculators">
+    <Position X="19.185" Y="20.469" Height="0.427" Width="1.916" />
+  </Comment>
+  <Comment CommentText="TnCalculation.TnFulfil">
+    <Position X="26.396" Y="22.855" Height="0.427" Width="1.916" />
+  </Comment>
+  <Comment CommentText="TnControllers">
+    <Position X="2.666" Y="9.671" Height="0.427" Width="1.227" />
+  </Comment>
+  <Comment CommentText="TnEnum">
+    <Position X="25.272" Y="1.522" Height="0.427" Width="0.784" />
+  </Comment>
+  <Comment CommentText="TnFeaturesClass">
+    <Position X="28.967" Y="4.723" Height="0.427" Width="1.183" />
+  </Comment>
+  <Comment CommentText="TnForms">
+    <Position X="4.266" Y="15.728" Height="0.427" Width="1.227" />
+  </Comment>
+  <Comment CommentText="TnThreads">
+    <Position X="27.083" Y="7.577" Height="0.427" Width="1.026" />
+  </Comment>
+  <Comment CommentText="TnSystem">
+    <Position X="20.079" Y="10.864" Height="0.427" Width="1.026" />
+  </Comment>
+  <Comment CommentText="TnThreads">
+    <Position X="32.776" Y="10.413" Height="0.427" Width="1.026" />
+  </Comment>
+  <Comment CommentText="TnUserControl">
+    <Position X="3.906" Y="21.106" Height="0.538" Width="1.05" />
+  </Comment>
+  <Comment CommentText="TnUtilities">
+    <Position X="10.361" Y="20.993" Height="0.538" Width="1.05" />
+  </Comment>
+  <Class Name="TNPro.Danhmuc.FrmTnListHem" Collapsed="true">
+    <Position X="5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>pgAIBQUDACqiDAAYzQCFHAEKsASIGgcCUgxAEOIngoA=</HashCode>
+      <FileName>Danhmuc\FrmTnListHem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Danhmuc.FrmTnListHuyenXa" Collapsed="true">
+    <Position X="6.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IRgQBR2gNKcAAgI6gUCABAAC/aIDLXNCeLABAPgXmEQ=</HashCode>
+      <FileName>Danhmuc\FrmTnListHuyenXa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Danhmuc.FrmTnListLayers" Collapsed="true">
+    <Position X="8.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>5N6ocU3AGi9gQoO1MCGXDVlKmRSC/j/m+YovwL6XHEU=</HashCode>
+      <FileName>Danhmuc\FrmTnListLayers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Danhmuc.FrmTnListLoaiXa" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEYwE11EACggQABRQAPGRAGa2oAmQg9C9KcCENL3XBE=</HashCode>
+      <FileName>Danhmuc\FrmTnListLoaiXa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Danhmuc.TnListLayers4Calc" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BCDAgBCAAAMBAApAAAgAAEAAJEAEIgAAAQAAABAAAAA=</HashCode>
+      <FileName>Danhmuc\TnListLayers4Calc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Database.TnConnectionInfo" Collapsed="true">
+    <Position X="4.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hACGCFtAggBAIIiRZAEAAAAQCEXaMoUA0ABLBAABQD4=</HashCode>
+      <FileName>Database\TnConnectionInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Database.TnConnectionManager" Collapsed="true">
+    <Position X="6.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IQAAAAAAAAAAAAAAAAAAEAEAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Database\TnConnectionManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Database.TnConnectionString" Collapsed="true">
+    <Position X="8.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAEAAAAAAAAAAAAIAgAAAAAAAAAA=</HashCode>
+      <FileName>Database\TnConnectionString.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Database.TnFcDuong" Collapsed="true">
+    <Position X="10" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAACCAAAQAIAAAABAAQAACAAAAHAAAEEwAUQ=</HashCode>
+      <FileName>Database\TnFcDuong.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Database.TnFcHem" Collapsed="true">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIBAAAACSAgAYEAAgAABAgQAAAAAAEHAIAECQAUQ=</HashCode>
+      <FileName>Database\TnFcHem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Database.TnFcThua" Collapsed="true">
+    <Position X="13.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BCAAIIAAAAACAhAEAAIEEAFEAQAARAAICEAACAQQAEQ=</HashCode>
+      <FileName>Database\TnFcThua.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Database.TnFcXa" Collapsed="true">
+    <Position X="4.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABJAAAAAACAgAAAAAAAAMAQQAADAAAAEAAABEAAEQ=</HashCode>
+      <FileName>Database\TnFcXa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Database.TnFeatureClassName" Collapsed="true">
+    <Position X="6.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QKCBrYCAAEspYAiAUAgBQkAgPEAFEAiAARAGABCQACA=</HashCode>
+      <FileName>Database\TnFeatureClassName.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Database.TnFieldName" Collapsed="true">
+    <Position X="8.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AiJAwmCICmQoqACggBG6kgIAEIBWRwKBAIMFAISFECI=</HashCode>
+      <FileName>Database\TnFieldName.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Database.TnRelationshipClasses" Collapsed="true">
+    <Position X="10" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAEAAAAAQAAAAAAAAAABAA=</HashCode>
+      <FileName>Database\TnRelationshipClasses.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Database.TnRelationshipClassName" Collapsed="true">
+    <Position X="11.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgABGADACABAAABGUAJgISYAgFREIQAEiEkLZQIABoA=</HashCode>
+      <FileName>Database\TnRelationshipClassName.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Database.TnTableDuongThua" Collapsed="true">
+    <Position X="13.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAABIIKAAACCAAQACAACAAABAAAARAAAAEgAAAAgAcQ=</HashCode>
+      <FileName>Database\TnTableDuongThua.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Database.TnTableGiadatDuong" Collapsed="true">
+    <Position X="4.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAoAICgACCAAAACAAQAABACAAAAAAAEAAAAACQAUQ=</HashCode>
+      <FileName>Database\TnTableGiadatDuong.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Database.TnTableGiaDatNongNghiep" Collapsed="true">
+    <Position X="6.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABMAgAAAACAAAAAAAAAAoAAACAABAAEAAQAACAAEQ=</HashCode>
+      <FileName>Database\TnTableGiaDatNongNghiep.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Database.TnTableGiaDatONt" Collapsed="true">
+    <Position X="8.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABMggAQAACAAAAAAAAAAoAAACAABCAEgAQAACAAEQ=</HashCode>
+      <FileName>Database\TnTableGiaDatONt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Database.TnTableHemThuaCs" Collapsed="true">
+    <Position X="10" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIJIBAAACAAIICCAAAAREAAAARAAAEAAACACQAMQ=</HashCode>
+      <FileName>Database\TnTableHemThuaCs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Database.TnTableLoaiDat" Collapsed="true">
+    <Position X="11.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIIAAAAACAAAAAAAAAAAAAACAABAAAgAAAAAAAEQ=</HashCode>
+      <FileName>Database\TnTableLoaiDat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Database.TnTableLoaiLopDulieu" Collapsed="true">
+    <Position X="13.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAQCAoACAAAAAAAAAAAAAAAAAAAABAQAAEQ=</HashCode>
+      <FileName>Database\TnTableLoaiLopDulieu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Database.TnTableLoaiXa" Collapsed="true">
+    <Position X="4.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABIAAAAAACAAAAAAAAAAIAAAAAACAAAAAAAAAAAEQ=</HashCode>
+      <FileName>Database\TnTableLoaiXa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Database.TnTableName" Collapsed="true">
+    <Position X="6.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACEggAAgBIAAIMAAgYADAAAAEEgAIAAAJAAggKQAE=</HashCode>
+      <FileName>Database\_tableNamecs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Database.TnTableQuyDinh" Collapsed="true">
+    <Position X="8.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAMIgAAAACAAACAAAAAARAEEBAAAAAAAAAAAAQAEQ=</HashCode>
+      <FileName>Database\TnTableQuyDinh.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Database.TnTableTgdNn" Collapsed="true">
+    <Position X="10" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABMIoAAACCAAAACAgAAAoEAAAEQACAEAAQCACAIUQ=</HashCode>
+      <FileName>Database\TnTableTgdNn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Database.TnTableTgdPnnDt" Collapsed="true">
+    <Position X="11.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAFBIpIFAACCBAAIKAgEAAJAAAAEBACEEEAAAAGQScQ=</HashCode>
+      <FileName>Database\TnTableTgdPnnDt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Database.TnTableTgdPnnNt" Collapsed="true">
+    <Position X="13.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABMogAQACCAAgAAAgAAAoEAAGEQBCAEgAQCACAIUQ=</HashCode>
+      <FileName>Database\TnTableTgdPnnNt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Database.TnTableThuaNam" Collapsed="true">
+    <Position X="4.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIIIAAAACAAAACAAAAAAAAACAQBAAAAAAAAAAAEQ=</HashCode>
+      <FileName>Database\TnTableThuaNam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Database.TnTableThuaSau50m" Collapsed="true">
+    <Position X="6.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIIIBAAACAAAAKAgAAAQAABABRAAAAAAACAAAIMQ=</HashCode>
+      <FileName>Database\TnTableThuaSau50m.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Quydinh.FrmTnQuydinhTinhgia" Collapsed="true">
+    <Position X="19.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gABiAQyAACgAAADIAQCFBAECiJIGAgtK2AAAEJoHGAA=</HashCode>
+      <FileName>Quydinh\FrmTnQuydinhTinhgia.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Quydinh.TnTenQuyDinh" Collapsed="true">
+    <Position X="21.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAEAAAAAAEAAAAAAAAAAAAAAIAEAAAAACgAAAI=</HashCode>
+      <FileName>Quydinh\TnTenQuyDinh.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnBaseFeatureClass.TnGeoObject" Collapsed="true">
+    <Position X="19.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAIAECIQBAgAAAABAAAAQAAKAAIgAAAggAqQASCAA=</HashCode>
+      <FileName>TnBaseFeatureClass\TnGeoObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TNPro.TnCalculation.TnCalculators.TnCalcThua3010">
+    <Position X="21.25" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAABCAgAgIACAAAAQABAEAAABAAAAAABAAAAAAAEAA=</HashCode>
+      <FileName>TnCalculation\TnCalculators\TnCalcThua3010.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnCalculation.TnCalculators.TnCalcThua3020" Collapsed="true">
+    <Position X="23.5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>TnCalculation\TnCalculators\TnCalcThua3020.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnCalculation.TnCalculators.TnCalcThua31xxAnd32xx" Collapsed="true">
+    <Position X="19" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABCAAAAAAAAAAAAAAAAQgAAAAAAAAAAEEAAAAEAA=</HashCode>
+      <FileName>TnCalculation\TnCalculators\TnCalcThua31xxAnd32xx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnCalculation.TnCalculators.TnCalculatorFactory" Collapsed="true">
+    <Position X="23.5" Y="20.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiABAAAAAAAAAAIAAgAAAAAAAIIgAAAgAAAAAAAAA=</HashCode>
+      <FileName>TnCalculation\TnCalculators\TnCalculatorFactory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TnToolsCalculator" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TNPro.TnCalculation.TnCalculators.TnToolsCalculator" Collapsed="true">
+    <Position X="21.25" Y="20.25" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="TNPro.TnCalculation.TnCalculators.TnToolsCalculator.startCaculatorDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TnCalculation\TnCalculators\TnToolsCalculator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>gBigFOoKRKCAIoNQGJzYIqwA1oAnYBQCsCyoIhNigEY=</HashCode>
+      <FileName>TnCalculation\TnCalculators\TnToolsCalculator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TNPro.TnCalculation.TnFulfil.TnExcuteCalculator" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.5" Y="22.25" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="TNPro.TnCalculation.TnFulfil.TnExcuteCalculator.TinhgiaDatDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TnCalculation\TnFulfil\TnExcuteCalculator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="TNPro.TnCalculation.TnFulfil.TnExcuteCalculator.steps" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TnCalculation\TnFulfil\TnExcuteCalculator.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>DggAAF5ABkAIEAAChkJKSAAICAABAoBEAAAQGBwAAMg=</HashCode>
+      <FileName>TnCalculation\TnFulfil\TnExcuteCalculator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TNPro.TnCalculation.TnFulfil.TnTasks" Collapsed="true">
+    <Position X="30.75" Y="22.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAIAABBAAAAAACAAAAAAAAAgAAgCAA=</HashCode>
+      <FileName>TnCalculation\TnFulfil\TnTasks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnControllers.TnMapController" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAEABAAAAIAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>TnControllers\TnMapController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TNPro.TnControllers.TnTocContextMenu" Collapsed="true">
+    <Position X="6" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAggAAAQAAAAACAAAAAAAA=</HashCode>
+      <FileName>TnControllers\TnTocContextMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnFeatureClass.TnDuong" Collapsed="true">
+    <Position X="26.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEIAAgAAAAAAAAQAAAAACgAEAAAACAAAAACAAAA=</HashCode>
+      <FileName>TnFeatureClass\TnDuong.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnFeatureClass.TnDuongFactory" Collapsed="true">
+    <Position X="34.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAQAAIAAAAAAAAAAAEAAAAAAAAAAAAAAAAAIAEA=</HashCode>
+      <FileName>TnFeatureClass\TnDuongFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnFeatureClass.TnDuongLoai1" Collapsed="true">
+    <Position X="27.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TnFeatureClass\TnDuongLoai1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnFeatureClass.TnHem" Collapsed="true">
+    <Position X="25.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TnFeatureClass\TnHem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnFeatureClass.TnHemFactory" Collapsed="true">
+    <Position X="36.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAgAAAAAAAAAAAAAAAAAAAgAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TnFeatureClass\TnHemFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnFeatureClass.TnThua" Collapsed="true">
+    <Position X="31" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAEDAAAJEQAgCAAAABADACAAEwABIAAEASQQBCAE=</HashCode>
+      <FileName>TnFeatureClass\TnThua.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnFeatureClass.TnThua3010" Collapsed="true">
+    <Position X="30" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TnFeatureClass\TnThua3010.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnFeatureClass.TnThua3020" Collapsed="true">
+    <Position X="32.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TnFeatureClass\TnThua3020.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnFeatureClass.TnThuaFactory" Collapsed="true">
+    <Position X="34.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TnFeatureClass\TnThuaFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.Form1" Collapsed="true">
+    <Position X="6.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAIAAAAAEAAAQAAAAA=</HashCode>
+      <FileName>TnForms\Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.Form2" Collapsed="true">
+    <Position X="8.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACIAAACgAAAwIAACAAAACCBAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TnForms\Form2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.Form3" Collapsed="true">
+    <Position X="10.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>TnForms\Form3.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.Form4" Collapsed="true">
+    <Position X="22.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TnForms\Form4.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.Form5" Collapsed="true">
+    <Position X="12" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAIAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>TnForms\Form5.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.Form7" Collapsed="true">
+    <Position X="13.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TnForms\Form7.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.Form8" Collapsed="true">
+    <Position X="6.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TnForms\Form8.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.FrmAddSdeData" Collapsed="true">
+    <Position X="4.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAACAAAAAAEADAQAACAAAEwgAACIBAAQAAABI=</HashCode>
+      <FileName>TnForms\FrmAddSdeData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.FrmCalculateLandPrize" Collapsed="true">
+    <Position X="8.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>5GDKnj+UD2Kb2JzTj+CqkpIiB90/SwJoxvWfVzIFYjA=</HashCode>
+      <FileName>TnForms\FrmCalculateLandPrize.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.FrmCash" Collapsed="true">
+    <Position X="15.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>tf2xAa1lNuo0enPtDVi7UYmjXt089p+hmnZ+RRolNsg=</HashCode>
+      <FileName>TnForms\FrmCash.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.FrmConnection" Collapsed="true">
+    <Position X="10.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QEAICiCQgjAQIISAGASGABFCAIwAQoFIgoAQEQgCCCA=</HashCode>
+      <FileName>TnForms\FrmConnection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.FrmDanhmuc" Collapsed="true">
+    <Position X="12" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gGxUARHQECGBEAACNgSAACgKMgEyFAgZAKDIwEDEgAA=</HashCode>
+      <FileName>TnForms\FrmDanhmuc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.FrmInit" Collapsed="true">
+    <Position X="31.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAQIABAAACAAAHCAAQDBaAiCEABEEgYAAKFAAgBSEBE=</HashCode>
+      <FileName>TnForms\FrmInit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.FrmLandpriceOnRoad" Collapsed="true">
+    <Position X="33.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gkQABCAQACCAAAEAIACAAaACAcA8AgQAAEAAAQCAABE=</HashCode>
+      <FileName>TnForms\FrmLandpriceOnRoad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.FrmLogin" Collapsed="true">
+    <Position X="6.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>0AgAAAAwqSAAEBAQgADEAAECAAQMygkAgMAAAQJqIEE=</HashCode>
+      <FileName>TnForms\FrmLogin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.FrmMain" Collapsed="true">
+    <Position X="13.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>1IgIKEsoAjGAM0QTCASBAAoDCNA9ckwIwnA+EAAHCiE=</HashCode>
+      <FileName>TnForms\FrmMain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.FrmMainMain" Collapsed="true">
+    <Position X="17.75" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAIAEAAACAQAAAACACQEAACAAAEhgACAgAAIAACAAA=</HashCode>
+      <FileName>TnForms\FrmMainMain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.FrmMap" Collapsed="true">
+    <Position X="24.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gIEAYAwAICgAACCIAACEBAgCCAEEQQAABsBAMQCMCAE=</HashCode>
+      <FileName>TnForms\FrmMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.FrmMapTools" Collapsed="true">
+    <Position X="6.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACCAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TnForms\FrmMapTools.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.FrmRule" Collapsed="true">
+    <Position X="8.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/ziQAwEQACMAURB/BACAgI9/CPw/Us5ilCAAYTf/BzI=</HashCode>
+      <FileName>TnForms\FrmRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.FrmSingleton" Collapsed="true">
+    <Position X="10.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAACAAAAAAAACAAIACAAAEAAAAAGAAAAAAAIA=</HashCode>
+      <FileName>TnForms\FrmSingleton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.FrmStart" Collapsed="true">
+    <Position X="8.75" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAAIAAAAACAAAGAAAACAAAiCAAAEAgIAACFAAAAAABA=</HashCode>
+      <FileName>TnForms\FrmStart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.FrmTableNames" Collapsed="true">
+    <Position X="11" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hAEAgEQkECgCAFgSBAGAAAWSQSCNQ4IIALBAAQABAhE=</HashCode>
+      <FileName>TnForms\FrmTableNames.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.FrmTn" Collapsed="true">
+    <Position X="12" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BJCgCv0AhCEAEAEICiC2wIdSjABBAMgBCkwARzAAQEc=</HashCode>
+      <FileName>TnForms\FrmTn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.FrmTnAttributeTable" Collapsed="true">
+    <Position X="26.75" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hgCAEIgAACAgAAGAAACAAAACAABAAIACAAIAAQAIFAA=</HashCode>
+      <FileName>TnForms\FrmTnAttributeTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.FrmTnCalculating" Collapsed="true">
+    <Position X="13.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAIAAECAAAACgAAAAAAAAAAAADgAAAA=</HashCode>
+      <FileName>TnForms\FrmTnCalculating.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.FrmTnInit" Collapsed="true">
+    <Position X="6.75" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iESIAQIIACwAIEBaQACwhQASABIE+gvCyAgMACclAJE=</HashCode>
+      <FileName>TnForms\FrmTnInit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.FrmTnMain" Collapsed="true">
+    <Position X="35.75" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hQEKAQEgASBACEREoGLAAAgmAQAFQhIdBkAAGgIbQLA=</HashCode>
+      <FileName>TnForms\FrmTnMain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.FrmTnMainRibbon" Collapsed="true">
+    <Position X="8.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>7lT7BzzF/i+oUPf9IBys2MbC+c+XY//XmuV1f3vaGW0=</HashCode>
+      <FileName>TnForms\FrmTnMainRibbon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.FrmTnMap" Collapsed="true">
+    <Position X="13.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAgIwAIDAAAAAIAACAAIACAAAUAgAAEgAAARICABE=</HashCode>
+      <FileName>TnForms\FrmTnMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.FrmTnMapEditor" Collapsed="true">
+    <Position X="20" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ADAAAAAQQCBAAhAgAADAAAACAIAAAAEAAAAAEAIAAAA=</HashCode>
+      <FileName>TnForms\FrmTnMapEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.FrmTnMapTool" Collapsed="true">
+    <Position X="29" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gDAAAIQQACBAAhAgAADAAAASCIAAAAEABAAEEQIAAAA=</HashCode>
+      <FileName>TnForms\FrmTnMapTool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.FrmTnRibbonRoot" Collapsed="true">
+    <Position X="4.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAACAAAAiAAAASAAACAAAACAAAQEBAAAgAAAAABAAA=</HashCode>
+      <FileName>TnForms\FrmTnRibbonRoot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.FrmTnRoot" Collapsed="true">
+    <Position X="17" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TnForms\FrmTnRoot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.FrmTnToolCash" Collapsed="true">
+    <Position X="38" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAACAAUAAAAACAACACAAAUQgAgEAAAABIgABA=</HashCode>
+      <FileName>TnForms\FrmTnToolCash.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.RibbonForm1" Collapsed="true">
+    <Position X="4.25" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABCAAAAAQAACAAAACAAAAAAAAAgAAAAIAAAA=</HashCode>
+      <FileName>TnForms\RibbonForm1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnForms.RootForm" Collapsed="true">
+    <Position X="21.25" Y="16" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gADACg4AgiABAISJQACAQAACAEEREBAAUgATQAIBACk=</HashCode>
+      <FileName>TnForms\RootForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnSystem.TnConst" Collapsed="true">
+    <Position X="21.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAQAAAAgAAAAAAAAACAAAgAEAIAAAAACAAAAA=</HashCode>
+      <FileName>TnSystem\TnConst.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnSystem.TnMapDocumentName" Collapsed="true">
+    <Position X="23.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>TnSystem\TnMapDocumentName.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnSystem.TnModeApp" Collapsed="true">
+    <Position X="25.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAACJAAAAAAAAAgAAAAAAABAAAAAA=</HashCode>
+      <FileName>TnSystem\TnModeApp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnSystem.TnModeApplication" Collapsed="true">
+    <Position X="21.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAgAgAgIAAAAACIAAACAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>TnSystem\TnModeApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnSystem.TnSDEVersions" Collapsed="true">
+    <Position X="23.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGAABAAAAAAAgIAICAQAABAAAAAAgAAgCAAAAQAAAA=</HashCode>
+      <FileName>TnSystem\TnSDEVersions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnSystem.TnServerProperties" Collapsed="true">
+    <Position X="25.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAACIQAAAAEEAgAgEAAiAQAIQAAAAACAAAAIEE=</HashCode>
+      <FileName>TnSystem\TnServerProperties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnSystem.TnSQLServerVersion" Collapsed="true">
+    <Position X="21.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgABIAAAAgAAAAAAAAAAAAAEACAgAAACAAAAAAACA=</HashCode>
+      <FileName>TnSystem\TnSQLServerVersion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnSystem.TnSystemFileName" Collapsed="true">
+    <Position X="23.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAgAAAAAAAAAAAgAAAAAEA=</HashCode>
+      <FileName>TnSystem\TnSystemFileName.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnThreads.TnThreadClassFrmLogin" Collapsed="true">
+    <Position X="28.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAI=</HashCode>
+      <FileName>TnThreads\TnThreadClassFrmLogin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnThreads.TnThreadClassFrmMap" Collapsed="true">
+    <Position X="30.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>TnThreads\TnThreadClassFrmMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnToolBox.TnExtensionTools" Collapsed="true">
+    <Position X="36.5" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAQAAAAABAAAQAAAAEABAAAAAAAAAAAAA=</HashCode>
+      <FileName>TnToolBox\TnExtensionTools.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnToolBox.TnExToolsFactory" Collapsed="true">
+    <Position X="34.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TnToolBox\TnExToolsFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnToolBox.TnTools" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="41.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QABAwAAQh4BAJwIiMIggAgQCAAA5iAAAUgBQApAaEkE=</HashCode>
+      <FileName>TnToolBox\TnTools.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TNPro.TnToolBox.TnCommonTools.TnOpenTable" Collapsed="true">
+    <Position X="38.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQACoCAAAAAAACAgAABAAAA=</HashCode>
+      <FileName>TnToolBox\TnCommonTools\TnOpenTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnToolBox.TnCommonTools.TnOpenTableFulfil" Collapsed="true">
+    <Position X="34.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>TnToolBox\TnCommonTools\TnOpenTableFulfil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnToolBox.TnCommonTools.TnRemoveLayerCmd" Collapsed="true">
+    <Position X="40" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACICAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TnToolBox\TnCommonTools\TnRemoveLayerCmd.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnToolBox.TnDataManagerTools.TnExToolsDataManager" Collapsed="true">
+    <Position X="36.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAECAAACAAwAgAAAAAAAAAAAAABAAAAAAUAAAAEAE=</HashCode>
+      <FileName>TnToolBox\TnDataManagerTools\TnExToolsDataManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TNPro.TnToolBox.TnDataManagerTools.TnLoad" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="38.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAQQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TnToolBox\TnDataManagerTools\TnLoad.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TNPro.TnToolBox.TnDataManagerTools.TnQueryFilter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="36.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAGAAAAAEAAAAACgAAFQAAAAIAAAAAAAQAAA=</HashCode>
+      <FileName>TnToolBox\TnDataManagerTools\TnQueryFilter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TNPro.TnToolBox.TnDataManagerTools.TnQueryFilterBuilder" Collapsed="true">
+    <Position X="38.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAABAIAABACAAAQMgAEEAAABAAABAAQgAAgEI=</HashCode>
+      <FileName>TnToolBox\TnDataManagerTools\TnQueryFilterBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnToolBox.TnDataManagerTools.TnSave" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="41.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACBA=</HashCode>
+      <FileName>TnToolBox\TnDataManagerTools\TnSave.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TNPro.TnToolBox.TnDataManagerTools.SDETable" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="36.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAFAMAQAAAAAAogIDggRQBAEZBAALBAAAggDAAAAEok=</HashCode>
+      <FileName>TnToolBox\TnDataManagerTools\SDETable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TNPro.TnToolBox.TnDataManagerTools.TnSQLTable" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="36.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAQBIAAAgIAAAIAgABAEAAKASSBgQCAAQAIAAAAAA=</HashCode>
+      <FileName>TnToolBox\TnDataManagerTools\TnSQLTable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TNPro.TnToolBox.TnMemoryManager.TnExMemory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="34.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAGAIAAEAAAAAAAEAABAAQQAAAAQAAA=</HashCode>
+      <FileName>TnToolBox\TnMemoryManager\TnExMemory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TNPro.TnToolBox.TnMemoryManager.TnMemory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="40" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIpYAFQIDABtQxGkZQT6QgEHYZUMAYDKq2BpgkAaBE=</HashCode>
+      <FileName>TnToolBox\TnMemoryManager\TnMemory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TNPro.TnToolBox.TnSpatialTools.TnExToolsSpatial" Collapsed="true">
+    <Position X="34.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAACAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TnToolBox\TnSpatialTools\TnExToolsSpatial.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TNPro.TnToolBox.TnSpatialTools.TnExToolsSpatialRel" Collapsed="true">
+    <Position X="38.75" Y="13.75" Width="1.5" />
+    <InheritanceLine Type="TNPro.TnToolBox.TnExtensionTools" FixedFromPoint="true">
+      <Path>
+        <Point X="37.25" Y="12.812" />
+        <Point X="37.25" Y="13.375" />
+        <Point X="39.5" Y="13.375" />
+        <Point X="39.5" Y="13.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>TnToolBox\TnSpatialTools\TnExToolsSpatialRel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TNPro.TnUserControl.TnInfoControl" Collapsed="true">
+    <Position X="5.25" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEACAAAAAAAACAAAACAAAIAgAAACAAAQAAAAA=</HashCode>
+      <FileName>TnUserControls\TnInfoControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.TnUserControl.UctrTnMap" Collapsed="true">
+    <Position X="7" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQwAACAAAAAIAACABAACCYAAgAACQIAAAAAFAAA=</HashCode>
+      <FileName>TnUserControls\UctrTnMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Utilities.TnDataArray" Collapsed="true">
+    <Position X="11.75" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Utilities\TnDataArray.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TNPro.Utilities.TnTabWithGridview" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAKAAAABAAAAAAAAAAhAAAAAg=</HashCode>
+      <FileName>Utilities\TnTabWithGridview.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TNPro.Utilities.TnUtilities" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>jQCIAAAAAACIAAABAAAAAAAIIkAgABABAAkBAAAAAiA=</HashCode>
+      <FileName>Utilities\TnUtilities.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Struct Name="TNPro.TnToolBox.TnDataManagerTools.TnDataRow" Collapsed="true">
+    <Position X="34.75" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACgBAAAAABAQAAAIAQAAYAAAAAABACBAIAgQ=</HashCode>
+      <FileName>TnToolBox\TnDataManagerTools\SDETable.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="TNPro.TnCalculation.TnFulfil.ITnCalculating" Collapsed="true">
+    <Position X="28.5" Y="23.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAQAAAAAAA=</HashCode>
+      <FileName>TnCalculation\TnFulfil\ITnCalculating.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="TNPro.TnEnum.EnumExTools" Collapsed="true">
+    <Position X="26.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgIAAAAAAAAAAIAAA=</HashCode>
+      <FileName>TnEnum\EnumExTools.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TNPro.TnEnum.EnumLoaiDuong" Collapsed="true">
+    <Position X="28.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAQAgEAAAAAAACAAAAAAABAAIAAAAAAAAAg=</HashCode>
+      <FileName>TnEnum\EnumLoaiDuong.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TNPro.TnEnum.EnumLoaiHem" Collapsed="true">
+    <Position X="30" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>TnEnum\EnumLoaiHem.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TNPro.TnEnum.EnumLoaiThua" Collapsed="true">
+    <Position X="26.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAEAAAAAAAA=</HashCode>
+      <FileName>TnEnum\EnumLoaiThua.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TNPro.TnEnum.EnumMainTask" Collapsed="true">
+    <Position X="28.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TnEnum\EnumMainTask.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TNPro.TnEnum.EnumModeCalc" Collapsed="true">
+    <Position X="30" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACQAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TnEnum\EnumModeCalc.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TNPro.TnEnum.EnumTask" Collapsed="true">
+    <Position X="31.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAACAAAAEgAAAAAAAQAAAEAAACgDAAAA=</HashCode>
+      <FileName>TnEnum\EnumTask.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TNPro.TnEnum.EnumTypeOfCalc" Collapsed="true">
+    <Position X="28.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQACAAAABAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>TnEnum\EnumTypeOfCalc.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TNPro.TnEnum.EnumTypeOfLayer" Collapsed="true">
+    <Position X="30" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAkAAAAAAAAAKAAAAAAAABAAAAEAAAAAIAAA=</HashCode>
+      <FileName>TnEnum\EnumTypeOfLayer.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TNPro.TnToolBox.TnDataManagerTools.EnumTypeOfEdit" Collapsed="true">
+    <Position X="36.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TnToolBox\TnDataManagerTools\EnumTypeOfEdit.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

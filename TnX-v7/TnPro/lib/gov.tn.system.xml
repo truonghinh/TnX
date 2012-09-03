@@ -1,0 +1,347 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>gov.tn.system</name>
+    </assembly>
+    <members>
+        <member name="P:gov.tn.system.TnSystemTempPath.TempPath">
+            <summary>
+            C:/tn/temp
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSystemTempPath.TempFullPath">
+            <summary>
+            C:/tn/temp/tempmdb.mdb/
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSystemTempPath.TempMdb">
+            <summary>
+            tempmdb.mdb
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSystemTempPath.TempFullPathNoEnd">
+            <summary>
+            C:/tn/temp/tempmdb.mdb
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSystemTempPath.NameMdb">
+            <summary>
+            tempmdb
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSystemTempPath.gov#tn#system#ITnSystemTempPath#TempPath">
+            <summary>
+            C:/tn/temp
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSystemTempPath.gov#tn#system#ITnSystemTempPath#TempMdb">
+            <summary>
+            tempmdb.mdb
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSystemTempPath.gov#tn#system#ITnSystemTempPath#NameMdb">
+            <summary>
+            tempmdb
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSystemTempPath.gov#tn#system#ITnSystemTempPath#TempFullPath">
+            <summary>
+            C:/tn/temp/tempmdb.mdb/
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSystemTempPath.gov#tn#system#ITnSystemTempPath#TempFullPathNoEnd">
+            <summary>
+            C:/tn/temp/tempmdb.mdb
+            </summary>
+        </member>
+        <member name="T:gov.tn.system.TnSecParamForCalc">
+            <summary>
+            Class
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.Name">
+            <summary>
+            Tên section trong file config
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.NamApDung">
+            <summary>
+            Năm áp dụng
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.ChoPhepApGia">
+            <summary>
+            Cho phép người dùng áp giá
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.DBufferMattien">
+            <summary>
+            --pndt--
+            Hệ số nhân thêm khi thửa có 2 mặt tiền (năm 2011:1.2)
+            </summary>
+            <value>get value</value>
+            aaaaaa
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.DBufferMathem">
+            <summary>
+            --pndt--
+            Hệ số nhân thêm khi thửa có 2 mặt tiền (năm 2011:1.2)
+            </summary>
+            <value>get value</value>
+            aaaaaa
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.K2MatTien">
+            <summary>
+            --pndt--
+            Hệ số nhân thêm khi thửa có 2 mặt tiền (năm 2011:1.2)
+            </summary>
+            <value>get value</value>
+            aaaaaa
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.K3MatTien">
+            <summary>
+            --pndt--
+            Hệ số nhân thêm khi thửa có 3 mặt tiền (năm 2011:1.3)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.K4MatTien">
+            <summary>
+            --pndt--
+            Hệ số nhân thêm khi thửa có 4 mặt tiền (năm 2011:1.4)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.PHemChinhRongTren6m">
+            <summary>
+            --pndt--
+            Phần trăm tính giá cho hẻm có độ rộng trên 6m (năm 2011: 40%)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.PHemChinhRongTren3_5m">
+            <summary>
+            --pndt--
+            Phần trăm tính giá cho hẻm có độ rộng từ 3.5m đến 6m (năm 2011: 30%)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.PHemChinhRongDuoi3_5m">
+            <summary>
+            --pndt--
+            Phần trăm tính giá cho hẻm có độ rộng dưới 3.5m (năm 2011: 20%)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.PHemPhuRongTren6m">
+            <summary>
+            --pndt--
+            Phần trăm tính giá cho hẻm có độ rộng trên 6m (năm 2011: 40%)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.PHemPhuRongTren3_5m">
+            <summary>
+            --pndt--
+            Phần trăm tính giá cho hẻm có độ rộng từ 3.5m đến 6m (năm 2011: 30%)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.PHemPhuRongDuoi3_5m">
+            <summary>
+            --pndt--
+            Phần trăm tính giá cho hẻm có độ rộng dưới 3.5m (năm 2011: 20%)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.PHemSauDuoi100m">
+            <summary>
+            --pndt--
+            Phần trăm tính giá đất nằm từ mét thứ 1 đến mét thứ 100 của hẻm (năm 2011: 100%)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.PHemSauDuoi200m">
+            <summary>
+            --pndt--
+            Phần trăm tính giá đất nằm sâu từ 100m đến 200m trong hẻm (năm 2011: 80%)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.PHemSauTren200m">
+            <summary>
+            --pndt--
+            Phần trăm tính giá đất nằm sâu trên 200m trong hẻm (năm 2011: 60%)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.DKhoangCach50mMatTien">
+            <summary>
+            --pndt--
+            Khoảng cách để phần đất được tính vào giới hạn 50m sau thử mặt tiền (năm 2011: 50)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.PDatSau50mMatTien">
+            <summary>
+            --pndt--
+            Phần trăm tính giá đất sau 50 thửa mặt tiền đườn phố (năm 2011: 30%)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.GToiThieuDoThiLoai4">
+            <summary>
+            --pndt--
+            Giá đất tối thiểu tại đô thị loại 4 (năm 2011: 100,000)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.GToiThieuDoThiLoai5">
+            <summary>
+            --pndt--
+            Giá đất tối thiểu tại đô thị loại 5 (năm 2011: 80,000)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.DBufferMepDuongNnVt1">
+            <summary>
+            --nn--
+            Độ rộng nền đường tối thiểu để thửa đất nông nghiệp thuộc vị trí 1 (năm 2011:9)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.DBufferMepDuongNnVt2">
+            <summary>
+            --nn--
+            Độ rộng nền đường tối thiểu để thửa đất nông nghiệp thuộc vị trí 1 (năm 2011:9)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.DRongDuongVitri1Nn">
+            <summary>
+            --nn--
+            Độ rộng nền đường tối thiểu để thửa đất nông nghiệp thuộc vị trí 1 (năm 2011:9)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.DSauDuongVitri1Nn">
+            <summary>
+            --nn--
+            Độ sâu nền đường tối đa để thửa đất nông nghiệp thuộc vị trí 1 (năm 2011:100)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.DRongDuongVitri2Nn">
+            <summary>
+            --nn--
+            Độ rộng nền đường tối thiểu để thửa đất nông nghiệp thuộc vị trí 2 (năm 2011:9)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.DSauDuongVitri2Nn">
+            <summary>
+            --nn--
+            Độ sâu nền đường tối đa để thửa đất nông nghiệp thuộc vị trí 2 (năm 2011:100)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.DSauDuongVitri2Nn2">
+            <summary>
+            --nn--
+            Độ sâu tối đa tính từ sau thửa nông nghiệp vị trí 1 
+            để thửa đất nông nghiệp thuộc vị trí 2 (năm 2011:200)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.DBufferMepDuongPnntVt1">
+            <summary>
+            --pnnt--
+            khoảng cách buffer tìm thửa tiếp giáp (năm 2011: 1)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.DBufferMepDuongPnntVt2">
+            <summary>
+            --pnnt--
+            khoảng cách buffer tìm thửa tiếp giáp (năm 2011: 1)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.DBkTimKdcttKv2">
+            <summary>
+            --pnnt--
+            khoảng cách buffer tìm thửa tiếp giáp (năm 2011: 1)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.DBkTimKdcttKv3">
+            <summary>
+            --pnnt--
+            khoảng cách buffer tìm thửa tiếp giáp (năm 2011: 1)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.PPnnNtDuoi100m">
+            <summary>
+            --pnnt--
+            Phần trăm tính giá cho đất phi nông nghiệp tại nông thôn 
+            nằm từ mét thứ 1 đến mét thứ 100 của thửa đất (năm 2011: 100)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.PPnnNtTren100m">
+            <summary>
+            --pnnt--
+            Phần trăm tính giá cho đất phi nông nghiệp tại nông thôn 
+            nằm từ mét thứ 100 tiếp theo của thửa đất (năm 2011: 50)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.DBKUbnd_truong_cho_tramyt">
+            <summary>
+            --pnnt--
+            Bán kính tính từ UBND xã, trường học, chợ, trạm y tế 
+            theo đường giao thông chính
+            mà trong đó thửa pnnnt thuộc vị trí 1 khu vực 1
+            (năm 2011:500m)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.DCachRgTmdv_dl_cn_cx_ktck">
+            <summary>
+            --pnnt--
+            Khoảng cách tính từ ranh giới của khu thương mại dịch vụ, khu du lịch
+            khu công nghiệp, khu chế xuất, khu kinh tế cửa khẩu
+            theo đường giao thông chính mà trong đó thửa pnnnt thuộc vị trí 1 khu vực 1
+            (năm 2011:500m)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.BTinhThuaDoiDien">
+            <summary>
+            --pnnt--
+            Có tính hay không tính các thửa đất đối diện 
+            với các khu thương mại dịch vụ, khu du lịch
+            khu công nghiệp, khu chế xuất, khu kinh tế cửa khẩu
+            là thửa pnnnt thuộc vị trí 1 khu vực 1
+            (năm 2011:1 (có)) (chấp nhận giá trị 1 hoặc 0)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.DCachDmgt_chodm">
+            <summary>
+            --pnnt--
+            Khoảng cách tính từ trung tâm đầu mối giao thông
+            chợ đầu mối theo tuyến đường giao thông chính
+            mà trong đó thửa pnnnt thuộc vị trí 1 khu vực 1
+            (năm 2011:500m)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.DVt2Kv1">
+            <summary>
+            --pnnt--
+            Khoảng cách tối đa tính từ giáp thửa pnnnt thuộc vị trí 1
+            theo đuòng giao thông chính mà trong đó
+            các thửa có mặt tiền tiếp giáp đường gtc
+            thuộc vị trí 2 khu vực 1
+            (năm 2011:1000m)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.DGrDatNn">
+            <summary>
+            --gr--
+            Khoảng cách tối đa xác định từ đường phân địa giới hành chính
+            giữa các huyện, thị xã vào sâu mỗi huyện,thị xã
+            đối với đất nông nghiệp
+            (năm 2011:300m)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.DGrDatPnnNt">
+            <summary>
+            --gr--
+            Khoảng cách tối đa xác định từ đường phân địa giới hành chính
+            giữa các huyện, thị xã vào sâu mỗi huyện,thị xã
+            đối với đất phi nông nghiệp ở nông thôn
+            (năm 2011:200m)
+            </summary>
+        </member>
+        <member name="P:gov.tn.system.TnSecParamForCalc.DGrDatPnnDt">
+            <summary>
+            --gr--
+            Khoảng cách tối đa xác định từ đường phân địa giới hành chính
+            giữa các huyện, thị xã vào sâu mỗi huyện,thị xã
+            đối với đất phi nông nghiệp ở nông thôn
+            (năm 2011:100m)
+            </summary>
+        </member>
+    </members>
+</doc>

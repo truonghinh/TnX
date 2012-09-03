@@ -57,9 +57,23 @@
       <DependentUpon>MapView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TocView.xaml.cs">
+      <DependentUpon>TocView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ToolBarView.xaml.cs">
+      <DependentUpon>ToolBarView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Include="MapView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TocView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ToolBarView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -68,6 +82,10 @@
     <ProjectReference Include="..\DockingLibrary\DockingLibrary.csproj">
       <Project>{FA274CD2-57BB-4EB0-B101-A562ADB1685E}</Project>
       <Name>DockingLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\g1.arcgis\g1.arcgis.csproj">
+      <Project>{37D0C528-3FBB-4532-B910-B788C1E92487}</Project>
+      <Name>g1.arcgis</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

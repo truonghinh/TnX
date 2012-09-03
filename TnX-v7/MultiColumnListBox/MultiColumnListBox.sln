@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiColumnListBox", "MultiColumnListBox\MultiColumnListBox.csproj", "{485EBDE3-7D89-466C-B03E-8542AF2DBEB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "resources", "resources\resources.csproj", "{8E889CB2-5E7D-4801-AA99-9750A1CEA9CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHarness", "TestHarness\TestHarness.csproj", "{C71CAA6F-233B-40CD-A46A-1C1AEF89D11C}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{485EBDE3-7D89-466C-B03E-8542AF2DBEB8}.Debug.ActiveCfg = Debug|.NET
+		{485EBDE3-7D89-466C-B03E-8542AF2DBEB8}.Debug.Build.0 = Debug|.NET
+		{485EBDE3-7D89-466C-B03E-8542AF2DBEB8}.Release.ActiveCfg = Release|.NET
+		{485EBDE3-7D89-466C-B03E-8542AF2DBEB8}.Release.Build.0 = Release|.NET
+		{8E889CB2-5E7D-4801-AA99-9750A1CEA9CD}.Debug.ActiveCfg = Debug|.NET
+		{8E889CB2-5E7D-4801-AA99-9750A1CEA9CD}.Debug.Build.0 = Debug|.NET
+		{8E889CB2-5E7D-4801-AA99-9750A1CEA9CD}.Release.ActiveCfg = Release|.NET
+		{8E889CB2-5E7D-4801-AA99-9750A1CEA9CD}.Release.Build.0 = Release|.NET
+		{C71CAA6F-233B-40CD-A46A-1C1AEF89D11C}.Debug.ActiveCfg = Debug|.NET
+		{C71CAA6F-233B-40CD-A46A-1C1AEF89D11C}.Debug.Build.0 = Debug|.NET
+		{C71CAA6F-233B-40CD-A46A-1C1AEF89D11C}.Release.ActiveCfg = Release|.NET
+		{C71CAA6F-233B-40CD-A46A-1C1AEF89D11C}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

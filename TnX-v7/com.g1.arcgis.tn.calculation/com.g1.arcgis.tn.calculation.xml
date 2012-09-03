@@ -1,0 +1,257 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>com.g1.arcgis.tn.calculation</name>
+    </assembly>
+    <members>
+        <member name="F:com.g1.arcgis.tn.calculation.FrmSummarizeLandprice.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:com.g1.arcgis.tn.calculation.FrmSummarizeLandprice.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:com.g1.arcgis.tn.calculation.FrmSummarizeLandprice.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:com.g1.arcgis.tn.calculation.FrmQuyDinh.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:com.g1.arcgis.tn.calculation.FrmQuyDinh.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:com.g1.arcgis.tn.calculation.FrmQuyDinh.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:com.g1.arcgis.tn.calculation.XtraForm1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:com.g1.arcgis.tn.calculation.XtraForm1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:com.g1.arcgis.tn.calculation.XtraForm1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:com.g1.arcgis.tn.calculation.FrmSetPositionParam.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:com.g1.arcgis.tn.calculation.FrmSetPositionParam.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:com.g1.arcgis.tn.calculation.FrmSetPositionParam.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:com.g1.arcgis.tn.calculation.GCalculationHemView.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:com.g1.arcgis.tn.calculation.GCalculationHemView.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:com.g1.arcgis.tn.calculation.GCalculationHemView.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:com.g1.arcgis.tn.calculation.evaluate.ExpressionParameters.Intersect">
+            <summary>
+            [INTERSECT]
+            </summary>
+        </member>
+        <member name="F:com.g1.arcgis.tn.calculation.evaluate.ExpressionParameters.ContainedBy">
+            <summary>
+            [CONTAINED_BY]
+            </summary>
+        </member>
+        <member name="F:com.g1.arcgis.tn.calculation.evaluate.ExpressionParameters.NewSelection">
+            <summary>
+            [NEW_SELECTION]
+            </summary>
+        </member>
+        <member name="F:com.g1.arcgis.tn.calculation.evaluate.ExpressionParameters.AddSelection">
+            <summary>
+            [ADD_SELECTION]
+            </summary>
+        </member>
+        <member name="F:com.g1.arcgis.tn.calculation.evaluate.ExpressionParameters.AndSelection">
+            <summary>
+            [AND_SELECTION]
+            </summary>
+        </member>
+        <member name="F:com.g1.arcgis.tn.calculation.evaluate.ExpressionParameters.SubtractSelection">
+            <summary>
+            [SUBTRACT_SELECTION]
+            </summary>
+        </member>
+        <member name="F:com.g1.arcgis.tn.calculation.GCalculationView.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:com.g1.arcgis.tn.calculation.GCalculationView.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:com.g1.arcgis.tn.calculation.GCalculationView.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:com.g1.arcgis.tn.calculation.FrmFilterLandprice.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:com.g1.arcgis.tn.calculation.FrmFilterLandprice.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:com.g1.arcgis.tn.calculation.FrmFilterLandprice.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:com.g1.arcgis.tn.calculation.GCalculatingView.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:com.g1.arcgis.tn.calculation.GCalculatingView.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:com.g1.arcgis.tn.calculation.GCalculatingView.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:com.g1.arcgis.tn.calculation.algorithm.AlgorithmPage.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:com.g1.arcgis.tn.calculation.algorithm.AlgorithmPage.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:com.g1.arcgis.tn.calculation.algorithm.AlgorithmPage.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:com.g1.arcgis.tn.calculation.evaluate.ExpressionKeyWords.Then">
+            <summary>
+            then
+            </summary>
+        </member>
+        <member name="F:com.g1.arcgis.tn.calculation.evaluate.DefaultExpressions._1010">
+            <summary>
+            ChonThuaTheoDuong([INTERSECT],[NEW_SELECTION],1) then ChonThuaTheoDuong([CONTAINED_BY],[AND_SELECTION],100)
+            </summary>
+        </member>
+        <member name="F:com.g1.arcgis.tn.calculation.evaluate.DefaultExpressions._1011">
+            <summary>
+            ChonThuaTheoDuong([INTERSECT],[NEW_SELECTION],1) then ChonThuaTheoDuong([CONTAINED_BY],[SUBTRACT_SELECTION],100)
+            </summary>
+        </member>
+        <member name="F:com.g1.arcgis.tn.calculation.evaluate.DefaultExpressions._2110">
+            <summary>
+            ChonThuaTheoDuong([INTERSECT],[NEW_SELECTION],1) then ChonThuaTheoTtXa([CONTAINED_BY],[AND_SELECTION],500)
+            </summary>
+        </member>
+        <member name="F:com.g1.arcgis.tn.calculation.evaluate.DefaultExpressions._1020">
+            <summary>
+            ChonThuaTheoDuong([INTERSECT],[NEW_SELECTION],1) then ChonThuaTheoDuong([CONTAINED_BY],[SUBTRACT_SELECTION],100)
+            </summary>
+        </member>
+        <member name="F:com.g1.arcgis.tn.calculation.evaluate.DefaultExpressions._3010">
+            <summary>
+            ChonThuaTheoDuong([INTERSECT],[NEW_SELECTION],1) then ChonThuaTheoDuong([CONTAINED_BY],[AND_SELECTION],50)
+            </summary>
+        </member>
+        <member name="F:com.g1.arcgis.tn.calculation.evaluate.DefaultExpressions._3011">
+            <summary>
+            ChonThuaTheoDuong([INTERSECT],[NEW_SELECTION],1) then ChonThuaTheoDuong([CONTAINED_BY],[SUBTRACT_SELECTION],50)
+            </summary>
+        </member>
+        <member name="F:com.g1.arcgis.tn.calculation.evaluate.DefaultExpressions._3020">
+            <summary>
+            ChonThuaTheoDuong([INTERSECT],[NEW_SELECTION],1) then ChonThuaTheoDuong([CONTAINED_BY],[SUBTRACT_SELECTION],50)
+            </summary>
+        </member>
+        <member name="F:com.g1.arcgis.tn.calculation.evaluate.DefaultExpressions._3111">
+            <summary>
+            ChonThuaTheoHemChinh([INTERSECT],[NEW_SELECTION],1) then ChonThuaTheoDuong([CONTAINED_BY],[AND_SELECTION],100)
+            </summary>
+        </member>
+        <member name="F:com.g1.arcgis.tn.calculation.evaluate.DefaultExpressions._3112">
+            <summary>
+            ChonThuaTheoHemChinh([INTERSECT],[NEW_SELECTION],1) then ChonThuaTheoDuong([CONTAINED_BY],[AND_SELECTION],200) then ChonThuaTheoDuong([CONTAINED_BY],[SUBTRACT_SELECTION],200)
+            </summary>
+        </member>
+        <member name="T:com.g1.arcgis.tn.calculation.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:com.g1.arcgis.tn.calculation.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:com.g1.arcgis.tn.calculation.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

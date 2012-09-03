@@ -21,8 +21,8 @@ namespace g1.arcgis.map
     public partial class MapView : UserControl
     {
         AxMapControl mapControl;
-        AxToolbarControl toolbarControl;
-        AxTOCControl tocControl;
+        //AxToolbarControl toolbarControl;
+        //AxTOCControl tocControl;
         public MapView()
         {
             InitializeComponent();
@@ -35,28 +35,28 @@ namespace g1.arcgis.map
             mapControl = new AxMapControl();
             mapHost.Child = mapControl;
 
-            toolbarControl = new AxToolbarControl();
-            toolbarHost.Child = toolbarControl;
+            //toolbarControl = new AxToolbarControl();
+            //toolbarHost.Child = toolbarControl;
 
-            tocControl = new AxTOCControl();
-            tocHost.Child = tocControl;
+            //tocControl = new AxTOCControl();
+            //tocHost.Child = tocControl;
         }
 
         private void LoadMap()
         {
             //Buddy up controls
-            tocControl.SetBuddyControl(mapControl);
-            toolbarControl.SetBuddyControl(mapControl);
+            //tocControl.SetBuddyControl(mapControl);
+            //toolbarControl.SetBuddyControl(mapControl);
 
             //add command and tools to the toolbar
-            toolbarControl.AddItem("esriControls.ControlsOpenDocCommand");
-            toolbarControl.AddItem("esriControls.ControlsAddDataCommand");
-            toolbarControl.AddItem("esriControls.ControlsSaveAsDocCommand");
-            toolbarControl.AddItem("esriControls.ControlsMapNavigationToolbar");
-            toolbarControl.AddItem("esriControls.ControlsMapIdentifyTool");
+            //toolbarControl.AddItem("esriControls.ControlsOpenDocCommand");
+            //toolbarControl.AddItem("esriControls.ControlsAddDataCommand");
+            //toolbarControl.AddItem("esriControls.ControlsSaveAsDocCommand");
+            //toolbarControl.AddItem("esriControls.ControlsMapNavigationToolbar");
+            //toolbarControl.AddItem("esriControls.ControlsMapIdentifyTool");
 
             //set controls' properties
-            toolbarControl.BackColor = System.Drawing.Color.FromArgb(245, 245, 220);
+            //toolbarControl.BackColor = System.Drawing.Color.FromArgb(245, 245, 220);
 
             //wire up events
             mapControl.OnMouseMove += new IMapControlEvents2_Ax_OnMouseMoveEventHandler(mapControl_OnMouseMove);

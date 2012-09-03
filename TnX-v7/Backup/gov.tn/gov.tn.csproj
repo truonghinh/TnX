@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{550833E5-73AD-476E-BCF1-400AB207D171}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>gov.tn</RootNamespace>
+    <AssemblyName>gov.tn</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>gov_tn_key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>gov.tn.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>gov.tn.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>gov.tn.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>gov.tn.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="com.g1.arcgis, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d181ec475ffe37dc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\com.g1.arcgis\bin\Debug\com.g1.arcgis.dll</HintPath>
+    </Reference>
+    <Reference Include="com.g1.arcgis.connection, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b832a35e15b66ce4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\com.g1.arcgis.connection\bin\Debug\com.g1.arcgis.connection.dll</HintPath>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geodatabase, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThuaInfo.cs" />
+    <Compile Include="TnDatabaseStructure\DataNameTemplate.cs" />
+    <Compile Include="TnDatabaseStructure\ITnFeatureClassName.cs" />
+    <Compile Include="TnDatabaseStructure\ITnTableName.cs" />
+    <Compile Include="TnDatabaseStructure\TnColWithIndexPair.cs" />
+    <Compile Include="TnDatabaseStructure\TnDatPhiNn.cs" />
+    <Compile Include="TnDatabaseStructure\TnFcDuong.cs" />
+    <Compile Include="TnDatabaseStructure\TnFcDuongChinhNongThon.cs" />
+    <Compile Include="TnDatabaseStructure\TnFcGiaDatHem.cs" />
+    <Compile Include="TnDatabaseStructure\TnFcGiaDatHemPhu.cs" />
+    <Compile Include="TnDatabaseStructure\TnFcHem.cs" />
+    <Compile Include="TnDatabaseStructure\TnFcKtvhxh.cs" />
+    <Compile Include="TnDatabaseStructure\TnFcRanhXaLine.cs" />
+    <Compile Include="TnDatabaseStructure\TnFcThua.cs" />
+    <Compile Include="TnDatabaseStructure\TnFcThuaGiaDat.cs" />
+    <Compile Include="TnDatabaseStructure\TnFcThuaGiaDatDraft.cs" />
+    <Compile Include="TnDatabaseStructure\TnFcThuaGiadatGiapranh.cs" />
+    <Compile Include="TnDatabaseStructure\TnFcTrungTamXa.cs" />
+    <Compile Include="TnDatabaseStructure\TnFcRanhXaPoly.cs" />
+    <Compile Include="TnDatabaseStructure\TnFeatureClassName.cs" />
+    <Compile Include="TnDatabaseStructure\TnFieldName.cs" />
+    <Compile Include="TnDatabaseStructure\TnGeoDatabaseObject.cs" />
+    <Compile Include="TnDatabaseStructure\TnLoaiDats.cs" />
+    <Compile Include="TnDatabaseStructure\TnTableDuongThua.cs" />
+    <Compile Include="TnDatabaseStructure\TnTableGiadatDuong.cs" />
+    <Compile Include="TnDatabaseStructure\TnTableGiaDatNongNghiep.cs" />
+    <Compile Include="TnDatabaseStructure\TnTableGiaDatONt.cs" />
+    <Compile Include="TnDatabaseStructure\TnTableHemThuaCs.cs" />
+    <Compile Include="TnDatabaseStructure\TnTableHesoVitri.cs" />
+    <Compile Include="TnDatabaseStructure\TnTableLoaiDat.cs" />
+    <Compile Include="TnDatabaseStructure\TnTableLoaiLopDulieu.cs" />
+    <Compile Include="TnDatabaseStructure\TnTableLoaiXa.cs" />
+    <Compile Include="TnDatabaseStructure\TnTableName.cs" />
+    <Compile Include="TnDatabaseStructure\TnTableQdKtvhxh.cs" />
+    <Compile Include="TnDatabaseStructure\TnTableQuyDinh.cs" />
+    <Compile Include="TnDatabaseStructure\TnTableTenDuong.cs" />
+    <Compile Include="TnDatabaseStructure\TnTableTgdNn.cs" />
+    <Compile Include="TnDatabaseStructure\TnTableTgdPnnDt.cs" />
+    <Compile Include="TnDatabaseStructure\TnTableTgdPnnNt.cs" />
+    <Compile Include="TnDatabaseStructure\TnTableThongSo.cs" />
+    <Compile Include="TnDatabaseStructure\TnTableThuaGiaDat.cs" />
+    <Compile Include="TnDatabaseStructure\TnTableThuaNam.cs" />
+    <Compile Include="TnDatabaseStructure\TnTableThuaSau50m.cs" />
+    <Compile Include="TnDatabaseStructure\TnTableUsers.cs" />
+    <Compile Include="TnDataNames.cs" />
+    <Compile Include="TnThuaInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gov_tn_key.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

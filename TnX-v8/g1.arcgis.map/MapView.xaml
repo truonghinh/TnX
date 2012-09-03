@@ -7,14 +7,16 @@
              xmlns:dkm="clr-namespace:DockingLibrary;assembly=DockingLibrary"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300" Loaded="mapView_Loaded" Name="MapViewControl">
-    <DockPanel>
-        <my:WindowsFormsHost Height="30" Name="toolbarHost" DockPanel.Dock="Top" />
+    <Grid>
+        <!--<my:WindowsFormsHost Height="30" Name="toolbarHost" DockPanel.Dock="Top" />
         <TextBlock Height="23.75" Name="textBlock1" DockPanel.Dock="Bottom">Ready</TextBlock>
         <my:WindowsFormsHost DockPanel.Dock="Left" Name="tocHost" HorizontalAlignment="Left" Width="40" />
         <GridSplitter DockPanel.Dock="Left" Name="gridSplitter1" Width="3" />
         <my:WindowsFormsHost Name="mapHost" />
         <dkm:DockManager Name="DockManager">
             
-        </dkm:DockManager>
-    </DockPanel>
+        </dkm:DockManager>-->
+        <my:WindowsFormsHost Name="mapHost" Margin="0,0,0,23.75" />
+        <TextBlock Height="23.75" Name="textBlock1" VerticalAlignment="Bottom">Ready</TextBlock>
+    </Grid>
 </UserControl>

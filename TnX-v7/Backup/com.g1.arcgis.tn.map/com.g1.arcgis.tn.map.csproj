@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8C604AAD-3EE8-459E-95A0-3825292AC22E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>com.g1.arcgis.tn.map</RootNamespace>
+    <AssemblyName>com.g1.arcgis.tn.map</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>map_key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="com.g1.arcgis.connection, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b832a35e15b66ce4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\com.g1.arcgis.connection\bin\Debug\com.g1.arcgis.connection.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.3DAnalyst, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86" />
+    <Reference Include="ESRI.ArcGIS.ADF, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.AxControls, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86" />
+    <Reference Include="ESRI.ArcGIS.Carto, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86" />
+    <Reference Include="ESRI.ArcGIS.Controls, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Display, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86" />
+    <Reference Include="ESRI.ArcGIS.Geodatabase, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geometry, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86" />
+    <Reference Include="ESRI.ArcGIS.GlobeCore, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86" />
+    <Reference Include="ESRI.ArcGIS.Output, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86" />
+    <Reference Include="ESRI.ArcGIS.System, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86" />
+    <Reference Include="ESRI.ArcGIS.SystemUI, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86" />
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAddLayers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddLayers.Designer.cs">
+      <DependentUpon>FrmAddLayers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GLayersView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GLayersView.Designer.cs">
+      <DependentUpon>GLayersView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GMap.cs" />
+    <Compile Include="GMapView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GMapView.Designer.cs">
+      <DependentUpon>GMapView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GPropertiesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GPropertiesView.Designer.cs">
+      <DependentUpon>GPropertiesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapViewController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MapContextMenu.cs" />
+    <Compile Include="TocContextMenu.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAddLayers.resx">
+      <DependentUpon>FrmAddLayers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GLayersView.resx">
+      <DependentUpon>GLayersView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GMapView.resx">
+      <DependentUpon>GMapView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GPropertiesView.resx">
+      <DependentUpon>GPropertiesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Resources\refresh_24.png">
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hand_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hand_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom_in_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom_out_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoomToSelected_icon_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom_extent_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_icon_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward_icon_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="map_key.snk" />
+    <None Include="Resources\clearSelection_icon_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\com.g1.arcgis.database\com.g1.arcgis.database.csproj">
+      <Project>{90A6F5E2-4F71-48E9-BDBE-80AFB9E10E67}</Project>
+      <Name>com.g1.arcgis.database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.g1.arcgis.tn.config\com.g1.arcgis.tn.config.csproj">
+      <Project>{2D1027CE-A2D8-4348-840C-8FBE73011A3E}</Project>
+      <Name>com.g1.arcgis.tn.config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.g1.arcgis.util\com.g1.arcgis.util.csproj">
+      <Project>{69369F22-C8DA-4CF4-82AD-84E54F64CBB7}</Project>
+      <Name>com.g1.arcgis.util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.g1.arcgis\com.g1.arcgis.csproj">
+      <Project>{C936E093-D491-49CC-B4E4-EC67465FB4D6}</Project>
+      <Name>com.g1.arcgis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GCommands\GCommands.csproj">
+      <Project>{1F48DB76-2D5E-45B5-94FC-6285531C05C2}</Project>
+      <Name>GCommands</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GPropertiesPage\SymboSelector2008.csproj">
+      <Project>{FE3E066C-08DE-4960-B5D8-A838BC9B0E25}</Project>
+      <Name>SymboSelector2008</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,938 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{99F8FE83-B42F-4F9F-9DD4-E98C9A003474}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TNPro</RootNamespace>
+    <AssemblyName>TNPro</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>Land.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>tnpro_key.snk</AssemblyOriginatorKeyFile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>12</ApplicationRevision>
+    <ApplicationVersion>2.0.24.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AMS.Profile, Version=2.0.4476.953, Culture=neutral, PublicKeyToken=4bfe8489ca9e2b65, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeRush.Common, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.Core, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.Extensions, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.PlugInCore, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.UserControls, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.Data.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DXCore.Controls.Utils.v6.3, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Controls.XtraEditors.v6.3, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Parser, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Platform, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.RichEdit.v10.2.Core, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v10.2.Core, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v10.2.Win, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\DevExpress.XtraRichEdit.v10.2\10.2.3.0__b88d1754d700e49a\DevExpress.XtraRichEdit.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v10.2, Version=10.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="ESRI.ArcGIS.3DAnalyst, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.ADF, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.ADF.Connection, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.AnalysisTools, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Analyst3DTools, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Animation, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.ArcMapUI, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.ArcWeb, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.AxControls, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86" />
+    <Reference Include="ESRI.ArcGIS.Carto, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.CartographyTools, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Controls, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.ConversionTools, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataInteroperabilityTools, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataManagementTools, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesFile, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesGDB, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesNetCDF, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesOleDB, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesRaster, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Display, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Framework, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.GeoAnalyst, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.GeocodingTools, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geodatabase, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.GeoDatabaseDistributed, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.GeoDatabaseExtensions, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geometry, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geoprocessing, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geoprocessor, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.GeostatisticalAnalystTools, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.GISClient, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.GlobeCore, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.LinearReferencingTools, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Location, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Maplex, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.MultidimensionTools, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.NetworkAnalysis, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.NetworkAnalyst, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.NetworkAnalystTools, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Output, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SampleTools, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Schematic, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Server, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SpatialAnalyst, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SpatialAnalystTools, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SpatialStatisticsTools, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.System, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SystemUI, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.TrackingAnalyst, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualC" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TnControlLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ed76c9eccdc45726, processorArchitecture=MSIL" />
+    <Reference Include="TnPlugin1, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="TnUtilities, Version=7.0.0.0, Culture=neutral, PublicKeyToken=1f994ee6fe9181cc, processorArchitecture=MSIL" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArcGISClass1.cs" />
+    <Compile Include="Check\TnCheck.cs" />
+    <Compile Include="Check\TnRoles.cs" />
+    <Compile Include="Danhmuc\FrmHem2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Danhmuc\FrmHem2.Designer.cs">
+      <DependentUpon>FrmHem2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Danhmuc\FrmHem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Danhmuc\FrmHem.Designer.cs">
+      <DependentUpon>FrmHem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Danhmuc\FrmKtvhxh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Danhmuc\FrmKtvhxh.Designer.cs">
+      <DependentUpon>FrmKtvhxh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Danhmuc\FrmLoaiDat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Danhmuc\FrmLoaiDat.Designer.cs">
+      <DependentUpon>FrmLoaiDat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Danhmuc\FrmLoaiXa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Danhmuc\FrmLoaiXa.Designer.cs">
+      <DependentUpon>FrmLoaiXa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Danhmuc\TnListLayers4Calc.cs" />
+    <Compile Include="DockPanelMapControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PluginManagement\PluginManager.cs" />
+    <Compile Include="Quydinh\FrmGiaDatNn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quydinh\FrmGiaDatNn.Designer.cs">
+      <DependentUpon>FrmGiaDatNn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quydinh\FrmGiaDatPnnDt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quydinh\FrmGiaDatPnnDt.Designer.cs">
+      <DependentUpon>FrmGiaDatPnnDt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quydinh\FrmGiaDatPnnNt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quydinh\FrmGiaDatPnnNt.Designer.cs">
+      <DependentUpon>FrmGiaDatPnnNt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quydinh\FrmQdNongNghiep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quydinh\FrmQdNongNghiep.Designer.cs">
+      <DependentUpon>FrmQdNongNghiep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quydinh\FrmQdPnnDt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quydinh\FrmQdPnnDt.Designer.cs">
+      <DependentUpon>FrmQdPnnDt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quydinh\FrmQdPnnNt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quydinh\FrmQdPnnNt.Designer.cs">
+      <DependentUpon>FrmQdPnnNt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quydinh\FrmThongSoQuyDinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quydinh\FrmThongSoQuyDinh.Designer.cs">
+      <DependentUpon>FrmThongSoQuyDinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quydinh\FrmTnOpenParams.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quydinh\FrmTnOpenParams.Designer.cs">
+      <DependentUpon>FrmTnOpenParams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quydinh\FrmTnSaveParams.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quydinh\FrmTnSaveParams.Designer.cs">
+      <DependentUpon>FrmTnSaveParams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quydinh\TnTenQuyDinh.cs" />
+    <Compile Include="TnEnum\EnumTypeOfCalc.cs" />
+    <Compile Include="Danhmuc\FrmTnListHuyenXa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Danhmuc\FrmTnListHuyenXa.Designer.cs">
+      <DependentUpon>FrmTnListHuyenXa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TnForms\FrmConnection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TnForms\FrmConnection.Designer.cs">
+      <DependentUpon>FrmConnection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TnForms\FrmMainRibbonExtensible.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TnForms\FrmMainRibbonExtensible.Designer.cs">
+      <DependentUpon>FrmMainRibbonExtensible.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TnForms\FrmTnAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TnForms\FrmTnAdmin.Designer.cs">
+      <DependentUpon>FrmTnAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TnForms\FrmTnBridgeConnetion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TnForms\FrmTnBridgeConnetion.Designer.cs">
+      <DependentUpon>FrmTnBridgeConnetion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TnForms\FrmTnCheckBridge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TnForms\FrmTnCheckBridge.Designer.cs">
+      <DependentUpon>FrmTnCheckBridge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TnForms\FrmTnLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TnForms\FrmTnLogin.designer.cs">
+      <DependentUpon>FrmTnLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TnEnum\EnumExTools.cs" />
+    <Compile Include="TnEnum\EnumLoaiDuong.cs" />
+    <Compile Include="TnEnum\EnumLoaiHem.cs" />
+    <Compile Include="TnEnum\EnumLoaiThua.cs" />
+    <Compile Include="TnEnum\EnumMainTask.cs" />
+    <Compile Include="TnEnum\EnumModeCalc.cs" />
+    <Compile Include="TnEnum\EnumTask.cs" />
+    <Compile Include="TnEnum\EnumTypeOfLayer.cs" />
+    <Compile Include="LicenseInitializer.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TnForms\FrmTnThaydoiMatkhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TnForms\FrmTnThaydoiMatkhau.Designer.cs">
+      <DependentUpon>FrmTnThaydoiMatkhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TnForms\FrmTnTinhThuaRiengLe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TnForms\FrmTnTinhThuaRiengLe.Designer.cs">
+      <DependentUpon>FrmTnTinhThuaRiengLe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TnForms\FrmUnInstallPlugins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TnForms\FrmUnInstallPlugins.Designer.cs">
+      <DependentUpon>FrmUnInstallPlugins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TnForms\FrmXacNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TnForms\FrmXacNhan.Designer.cs">
+      <DependentUpon>FrmXacNhan.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="Resources\3D GEARS GEAR11.png" />
+    <None Include="Resources\1.png" />
+    <None Include="Resources\user_50_50.png" />
+    <None Include="Resources\system_50_50.png" />
+    <None Include="Resources\system_30_30.png" />
+    <None Include="Resources\user_30_30.png" />
+    <None Include="Resources\database_30_30.png" />
+    <None Include="Resources\loaderAnim32.gif" />
+    <None Include="Resources\big-roller.gif" />
+    <None Include="Resources\bouncing-ball.gif" />
+    <None Include="Resources\big-flower.gif" />
+    <None Include="Resources\closeup.gif" />
+    <None Include="Resources\helpup.gif" />
+    <None Include="Resources\frame.png" />
+    <None Include="Resources\AnimatedMoney.gif" />
+    <None Include="Resources\Background.jpg" />
+    <None Include="Resources\AnimatedMoney2.gif" />
+    <None Include="Resources\Background274_194.jpg" />
+    <None Include="Resources\addSDE.png" />
+    <None Include="Resources\addSDE_26_26.png" />
+    <None Include="Resources\addLayerSDE26_23.png" />
+    <None Include="Resources\green-abstract-background_480_336.jpg" />
+    <None Include="Resources\Background_342_242.jpg" />
+    <None Include="Resources\Calculator-icon_50_50.png" />
+    <None Include="Resources\close_icon_50_50.png" />
+    <None Include="Resources\FrmTnInitBackground.jpg" />
+    <None Include="Resources\al_loading.gif" />
+    <None Include="Resources\al_loading_20.gif" />
+    <None Include="Resources\al_loading_16_16.gif" />
+    <None Include="Resources\check_16_16.png" />
+    <None Include="Resources\error_16_16.png" />
+    <None Include="Resources\hand_icon_16.png" />
+    <None Include="Resources\forward_icon_16.png" />
+    <None Include="Resources\back_icon_16.png" />
+    <None Include="Resources\clearSelection_icon_16.png" />
+    <None Include="Resources\fullView_icon_16.png" />
+    <None Include="Resources\addLayer_icon_48.png" />
+    <None Include="Resources\fullView_icon_16_2.png" />
+    <None Include="Resources\addLayer_icon_16.png" />
+    <Content Include="Land.ico" />
+    <None Include="Resources\c.png" />
+    <None Include="Resources\gr.png" />
+    <None Include="Resources\127.png" />
+    <None Include="Resources\54.png" />
+    <None Include="Resources\46.png" />
+    <None Include="Resources\43_hx.png" />
+    <None Include="Resources\43_x.png" />
+    <None Include="Resources\43_h.png" />
+    <None Include="Resources\59.png" />
+    <None Include="Resources\86_nn.png" />
+    <None Include="Resources\86_ont.png" />
+    <None Include="Resources\86_odt.png" />
+    <None Include="Resources\2_a.png" />
+    <None Include="Resources\2_c.png" />
+    <None Include="Resources\2_nn.png" />
+    <None Include="Resources\2_pnnnt.png" />
+    <None Include="Resources\2_pnn.png" />
+    <None Include="Resources\2_pnndt.png" />
+    <None Include="Resources\80.png" />
+    <None Include="Resources\53.png" />
+    <None Include="Resources\error_55.png" />
+    <None Include="Resources\calculator_24.png" />
+    <None Include="Resources\close_24.png" />
+    <None Include="Resources\check_24.png" />
+    <None Include="Resources\add_24.png" />
+    <None Include="Resources\browse_24.png" />
+    <None Include="Resources\add_48.png" />
+    <None Include="Resources\112_24.png" />
+    <None Include="Resources\data_48.png" />
+    <None Include="Resources\close_21.png" />
+    <None Include="Resources\46_24.png" />
+    <None Include="Resources\add_user_24.png" />
+    <None Include="Resources\delete_user_24.png" />
+    <None Include="Resources\98.png" />
+    <None Include="Resources\98_24.png" />
+    <None Include="Resources\connectDb_24.png" />
+    <None Include="Resources\91_24.png" />
+    <None Include="Resources\1_24.png" />
+    <None Include="Resources\connect_to_database._24.png" />
+    <None Include="Resources\add_more_24.png" />
+    <None Include="Resources\48_24.png" />
+    <None Include="Resources\21_24.png" />
+    <None Include="Resources\131_24.png" />
+    <None Include="Resources\72_24.png" />
+    <None Include="Resources\118_24.png" />
+    <None Include="Resources\7_24.png" />
+    <None Include="Resources\2_24.png" />
+    <None Include="Resources\85_24.png" />
+    <None Include="Resources\43_ld.png" />
+    <None Include="Resources\37_24.png" />
+    <None Include="Resources\39_24.png" />
+    <None Include="Resources\23_24.png" />
+    <None Include="Resources\28_24.png" />
+    <None Include="Resources\dashedborder.png" />
+    <None Include="Resources\algorithm_dashed.png" />
+    <None Include="Resources\algorithm_dashed1.png" />
+    <None Include="Resources\algorithm_dashed_gray.png" />
+    <None Include="Resources\43_ktvhxh.png" />
+    <None Include="Resources\7.png" />
+    <None Include="Resources\hand_48.png" />
+    <None Include="Resources\closeFolder_48.png" />
+    <None Include="Resources\65_24.png" />
+    <None Include="Resources\62.png" />
+    <None Include="Resources\Address_web_icon_preview2.png" />
+    <Content Include="lib\AMS.Profile.dll" />
+    <Content Include="lib\AMS.Profile.pdb" />
+    <Content Include="lib\com.g1.arcgis.connection.dll" />
+    <Content Include="lib\com.g1.arcgis.connection.pdb" />
+    <Content Include="lib\com.g1.arcgis.core.dll" />
+    <Content Include="lib\com.g1.arcgis.core.pdb" />
+    <Content Include="lib\com.g1.arcgis.database.dll" />
+    <Content Include="lib\com.g1.arcgis.database.pdb" />
+    <Content Include="lib\com.g1.arcgis.dataManagement.dll" />
+    <Content Include="lib\com.g1.arcgis.dataManagement.pdb" />
+    <Content Include="lib\com.g1.arcgis.dll" />
+    <Content Include="lib\com.g1.arcgis.pdb" />
+    <Content Include="lib\com.g1.arcgis.spatialAnalysis.dll" />
+    <Content Include="lib\com.g1.arcgis.spatialAnalysis.pdb" />
+    <Content Include="lib\com.g1.arcgis.thematic.dll" />
+    <Content Include="lib\com.g1.arcgis.thematic.pdb" />
+    <Content Include="lib\com.g1.arcgis.tn.calculation.dll" />
+    <Content Include="lib\com.g1.arcgis.tn.calculation.pdb" />
+    <Content Include="lib\com.g1.arcgis.tn.config.dll" />
+    <Content Include="lib\com.g1.arcgis.tn.config.pdb" />
+    <Content Include="lib\com.g1.arcgis.tn.landprice.dll" />
+    <Content Include="lib\com.g1.arcgis.tn.landprice.pdb" />
+    <Content Include="lib\com.g1.arcgis.tn.map.dll" />
+    <Content Include="lib\com.g1.arcgis.tn.map.pdb" />
+    <Content Include="lib\com.g1.arcgis.tn.query.dll" />
+    <Content Include="lib\com.g1.arcgis.tn.query.pdb" />
+    <Content Include="lib\com.g1.arcgis.util.dll" />
+    <Content Include="lib\com.g1.arcgis.util.pdb" />
+    <Content Include="lib\com.g1.dll" />
+    <Content Include="lib\com.g1.pdb" />
+    <Content Include="lib\ExtensionAPI.dll" />
+    <Content Include="lib\ExtensionAPI.pdb" />
+    <Content Include="lib\gov.tn.dll" />
+    <Content Include="lib\gov.tn.pdb" />
+    <Content Include="lib\gov.tn.system.dll" />
+    <Content Include="lib\gov.tn.system.pdb" />
+    <Content Include="lib\gov.tn.system.xml" />
+    <Content Include="lib\log4net.dll" />
+    <Content Include="lib\TnControlLib.dll" />
+    <Content Include="lib\TnControlLib.pdb" />
+    <Content Include="lib\TnPlugin1.dll" />
+    <Content Include="lib\TnPlugin1.pdb" />
+    <Content Include="lib\TnUtilities.dll" />
+    <Content Include="lib\TnUtilities.pdb" />
+    <None Include="Resources\deleteFile_16.png" />
+    <None Include="Resources\calculator_1_43.png" />
+    <None Include="Resources\calculator_2_43.png" />
+    <None Include="Resources\1345774239_database_table.png" />
+    <None Include="Resources\help_43.png" />
+    <Content Include="Resources\icon.gif" />
+    <None Include="Resources\icon1.gif" />
+    <None Include="Resources\minup.gif" />
+    <None Include="Resources\maytinhtien.jpg" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\maytinhtien_100_100.png" />
+    <None Include="Resources\leftbg_194.jpg" />
+    <None Include="Resources\leftbg_171_242.jpg" />
+    <None Include="Resources\Layers-icon_50_50.png" />
+    <None Include="Resources\map_icon_50_50.png" />
+    <None Include="Resources\loading.gif" />
+    <None Include="Resources\loading_transparent.gif" />
+    <None Include="Resources\loading2.gif" />
+    <None Include="Resources\loading3.gif" />
+    <None Include="Resources\loading-update.gif" />
+    <None Include="Resources\loading4.gif" />
+    <None Include="Resources\login_bg_400_225.jpg" />
+    <None Include="Resources\math_48.png" />
+    <None Include="Resources\math_24.png" />
+    <None Include="Resources\login_24.png" />
+    <None Include="Resources\location_24.png" />
+    <None Include="Resources\info_48.png" />
+    <None Include="Resources\login2_500_375.jpg" />
+    <None Include="Resources\installicon_48.png" />
+    <None Include="Resources\map_48.png" />
+    <None Include="Resources\install_48.png" />
+    <None Include="Resources\marker_43.png" />
+    <Content Include="Resources\Money.ico" />
+    <None Include="Resources\waiting.gif" />
+    <None Include="Resources\waiting2.gif" />
+    <None Include="Resources\righttpcrnr.gif" />
+    <None Include="Resources\thin_gold_frame.png" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\TnMap.png" />
+    <None Include="Resources\query.png" />
+    <None Include="Resources\TnCalculator2.png" />
+    <None Include="Resources\TnCalculating.png" />
+    <None Include="Resources\TnQuering.png" />
+    <None Include="Resources\TnRefresh.png" />
+    <None Include="Resources\TnSelectAll.png" />
+    <None Include="Resources\TnClearSelected.png" />
+    <None Include="Resources\TnUnlocked.png" />
+    <None Include="Resources\TnLocked.png" />
+    <None Include="Resources\TnOk.png" />
+    <None Include="Resources\TnSave.png" />
+    <None Include="Resources\TnMapTayninh.png" />
+    <None Include="Resources\TnCalculator_40_54.png" />
+    <None Include="Resources\TnCalculating_40_54.png" />
+    <None Include="Resources\TnError_18_18.png" />
+    <None Include="Resources\TnOk_18_18.png" />
+    <None Include="Resources\TnSave_28_28.png" />
+    <None Include="Resources\TnLocked_hover.png" />
+    <None Include="Resources\TnMap_hover.png" />
+    <None Include="Resources\TnOk_hover.png" />
+    <None Include="Resources\TnSelectAll_hover.png" />
+    <None Include="Resources\TnClearSelected_hover.png" />
+    <None Include="Resources\TnQuery_hover.png" />
+    <None Include="Resources\TnRefresh_hover.png" />
+    <None Include="Resources\TnRefresh1.png" />
+    <None Include="Resources\TnSave_28_28_hover.png" />
+    <None Include="Resources\TnUnlocked_hover.png" />
+    <None Include="Resources\table_icon_50_50.png" />
+    <None Include="Resources\open_icon_50_50.png" />
+    <None Include="Resources\new_icon_50_50.png" />
+    <None Include="Resources\Tn_open_icon_50_50.png" />
+    <None Include="Resources\Tn_save_icon_50_50.png" />
+    <None Include="Resources\Tn_save_icon_50_50_2.png" />
+    <None Include="Resources\Tn_map_icon_50_50.png" />
+    <None Include="Resources\Tn_table_icon_50_50.png" />
+    <None Include="Resources\preview.gif" />
+    <None Include="Resources\selectFeature_icon_16.png" />
+    <None Include="Resources\Tn_open_icon_16_16.png" />
+    <None Include="Resources\quydinhchung_icon_t.png" />
+    <None Include="Resources\quydinhnn_icon_t.png" />
+    <None Include="Resources\quydinhonn_icon_t.png" />
+    <None Include="Resources\quydinhodt_icon_t.png" />
+    <None Include="Resources\quydinhodt_icon.png" />
+    <None Include="Resources\quydinhgr_icon_t.png" />
+    <None Include="Resources\TinhgiadatPnnNt_icon_50.png" />
+    <None Include="Resources\PnnNT_icon_128.png" />
+    <None Include="Resources\nn.png" />
+    <None Include="Resources\pnt.png" />
+    <None Include="Resources\pdt.png" />
+    <None Include="Resources\pnt1.png" />
+    <None Include="Resources\pnn.png" />
+    <None Include="Resources\stand-up_9_18.png" />
+    <None Include="Resources\stand-up_48_96.png" />
+    <None Include="Resources\plugin_template_48.png" />
+    <None Include="Resources\remove-plugin_48.jpg" />
+    <None Include="Resources\table_48.png" />
+    <None Include="Resources\road_icon_48.png" />
+    <None Include="Resources\pushme_48.png" />
+    <None Include="Resources\refresh_24.png" />
+    <None Include="Resources\select_48.png" />
+    <None Include="Resources\nn1.png" />
+    <None Include="Resources\phi nn do thi.png" />
+    <None Include="Resources\phi nn nt.png" />
+    <None Include="Resources\numbers-icon_43.png" />
+    <None Include="Resources\select_by_location_43.png" />
+    <None Include="Resources\table_16.png" />
+    <Content Include="Resources\ttlebar1.gif" />
+    <None Include="Resources\world-map-wallpaper_200_242.png" />
+    <None Include="Resources\warning_16_16.png" />
+    <None Include="Resources\zoom_in_16.png" />
+    <None Include="Resources\zoom_out_16.png" />
+    <None Include="Resources\zoomToSelected_icon_16.png" />
+    <None Include="TNProClassDiagram.cd" />
+    <None Include="Resources\user_icon_18.png" />
+    <None Include="Resources\user_18.png" />
+    <None Include="Resources\working_15_18.gif" />
+    <None Include="Resources\working_18.gif" />
+    <None Include="Resources\zoomextent.png" />
+    <None Include="Resources\zoom-extent.png" />
+    <None Include="Resources\xemgiadat_48.png" />
+    <None Include="tnpro_key.snk" />
+    <None Include="Resources\version_16.jpg" />
+    <None Include="Resources\xml_16.png" />
+    <Content Include="TNPro-icon_32.ico" />
+    <Content Include="TNPro_icon_1_32.ico" />
+    <EmbeddedResource Include="Danhmuc\FrmHem2.resx">
+      <DependentUpon>FrmHem2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Danhmuc\FrmHem.resx">
+      <DependentUpon>FrmHem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Danhmuc\FrmKtvhxh.resx">
+      <DependentUpon>FrmKtvhxh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Danhmuc\FrmLoaiDat.resx">
+      <DependentUpon>FrmLoaiDat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Danhmuc\FrmLoaiXa.resx">
+      <DependentUpon>FrmLoaiXa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quydinh\FrmGiaDatNn.resx">
+      <DependentUpon>FrmGiaDatNn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quydinh\FrmGiaDatPnnDt.resx">
+      <DependentUpon>FrmGiaDatPnnDt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quydinh\FrmGiaDatPnnNt.resx">
+      <DependentUpon>FrmGiaDatPnnNt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quydinh\FrmQdNongNghiep.resx">
+      <DependentUpon>FrmQdNongNghiep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quydinh\FrmQdPnnDt.resx">
+      <DependentUpon>FrmQdPnnDt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quydinh\FrmQdPnnNt.resx">
+      <DependentUpon>FrmQdPnnNt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quydinh\FrmThongSoQuyDinh.resx">
+      <DependentUpon>FrmThongSoQuyDinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quydinh\FrmTnOpenParams.resx">
+      <DependentUpon>FrmTnOpenParams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quydinh\FrmTnSaveParams.resx">
+      <DependentUpon>FrmTnSaveParams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TnForms\FrmConnection.resx">
+      <DependentUpon>FrmConnection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TnForms\FrmMainRibbonExtensible.resx">
+      <DependentUpon>FrmMainRibbonExtensible.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TnForms\FrmTnAdmin.resx">
+      <DependentUpon>FrmTnAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TnForms\FrmTnBridgeConnetion.resx">
+      <DependentUpon>FrmTnBridgeConnetion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TnForms\FrmTnCheckBridge.resx">
+      <DependentUpon>FrmTnCheckBridge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DockPanelMapControl.resx">
+      <DependentUpon>DockPanelMapControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Danhmuc\FrmTnListHuyenXa.resx">
+      <DependentUpon>FrmTnListHuyenXa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TnForms\FrmTnLogin.resx">
+      <DependentUpon>FrmTnLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="TnAddSdeCmd.bmp" />
+    <EmbeddedResource Include="TnForms\FrmTnThaydoiMatkhau.resx">
+      <DependentUpon>FrmTnThaydoiMatkhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TnForms\FrmTnTinhThuaRiengLe.resx">
+      <DependentUpon>FrmTnTinhThuaRiengLe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TnForms\FrmUnInstallPlugins.resx">
+      <DependentUpon>FrmUnInstallPlugins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TnForms\FrmXacNhan.resx">
+      <DependentUpon>FrmXacNhan.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\com.g1.arcgis.connection\com.g1.arcgis.connection.csproj">
+      <Project>{0598BE3D-F8E8-49DB-8569-0D9B6D2A93CE}</Project>
+      <Name>com.g1.arcgis.connection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.g1.arcgis.core\com.g1.arcgis.core.csproj">
+      <Project>{F5641E66-26BF-4B55-9FB6-A94F91904E7E}</Project>
+      <Name>com.g1.arcgis.core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.g1.arcgis.database\com.g1.arcgis.database.csproj">
+      <Project>{90A6F5E2-4F71-48E9-BDBE-80AFB9E10E67}</Project>
+      <Name>com.g1.arcgis.database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.g1.arcgis.dataManagement\com.g1.arcgis.dataManagement.csproj">
+      <Project>{BC361164-2229-49B5-9C6B-947A27E3B6E1}</Project>
+      <Name>com.g1.arcgis.dataManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.g1.arcgis.spatialAnalysis\com.g1.arcgis.spatialAnalysis.csproj">
+      <Project>{7C677D33-B849-41AE-8950-38051934D2BA}</Project>
+      <Name>com.g1.arcgis.spatialAnalysis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.g1.arcgis.thematic\com.g1.arcgis.thematic.csproj">
+      <Project>{B13BC8C5-3F7E-4FBC-9E7C-F32CC1944FC1}</Project>
+      <Name>com.g1.arcgis.thematic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.g1.arcgis.tn.algorithm\com.g1.arcgis.tn.algorithm.csproj">
+      <Project>{3EFCE2E2-A06F-4050-B46C-6389D0747C34}</Project>
+      <Name>com.g1.arcgis.tn.algorithm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.g1.arcgis.tn.calculation\com.g1.arcgis.tn.calculation.csproj">
+      <Project>{0E9207A4-C8B4-4328-93A0-906EFF994EC4}</Project>
+      <Name>com.g1.arcgis.tn.calculation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.g1.arcgis.tn.config\com.g1.arcgis.tn.config.csproj">
+      <Project>{2D1027CE-A2D8-4348-840C-8FBE73011A3E}</Project>
+      <Name>com.g1.arcgis.tn.config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.g1.arcgis.tn.landprice\com.g1.arcgis.tn.landprice.csproj">
+      <Project>{3C017C15-7A76-4AA9-8719-9D64CB6DB36D}</Project>
+      <Name>com.g1.arcgis.tn.landprice</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.g1.arcgis.tn.map\com.g1.arcgis.tn.map.csproj">
+      <Project>{8C604AAD-3EE8-459E-95A0-3825292AC22E}</Project>
+      <Name>com.g1.arcgis.tn.map</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.g1.arcgis.tn.query\com.g1.arcgis.tn.query.csproj">
+      <Project>{E4C560F6-FDD9-42F9-8163-E5AA304B017B}</Project>
+      <Name>com.g1.arcgis.tn.query</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.g1.arcgis.util\com.g1.arcgis.util.csproj">
+      <Project>{69369F22-C8DA-4CF4-82AD-84E54F64CBB7}</Project>
+      <Name>com.g1.arcgis.util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.g1.arcgis\com.g1.arcgis.csproj">
+      <Project>{C936E093-D491-49CC-B4E4-EC67465FB4D6}</Project>
+      <Name>com.g1.arcgis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExtensionAPI\ExtensionAPI.csproj">
+      <Project>{9FE08119-F85B-49BC-9D4E-4E4EEA8F24D4}</Project>
+      <Name>ExtensionAPI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\gov.tn.system\gov.tn.system.csproj">
+      <Project>{984E43BA-ACE3-4B04-8E47-6BB6560281CF}</Project>
+      <Name>gov.tn.system</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\gov.tn\gov.tn.csproj">
+      <Project>{550833E5-73AD-476E-BCF1-400AB207D171}</Project>
+      <Name>gov.tn</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
